@@ -1,0 +1,18 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1669244576
+<< locali >>
+rect 2719 31083 10250 31620
+rect 2753 22451 3035 22883
+rect 9935 22451 10217 22883
+use sky130_fd_pr__res_xhigh_po_1p41_3ZBBQK  sky130_fd_pr__res_xhigh_po_1p41_3ZBBQK_0
+timestamp 1669244576
+transform 1 0 6485 0 1 26719
+box -3898 -4434 3898 4434
+<< labels >>
+rlabel locali 2753 22451 3035 22883 5 Pin1
+port 0 s
+rlabel locali 9935 22451 10217 22883 5 Pin2
+port 2 s
+<< end >>

@@ -1,0 +1,26 @@
+* NGSPICE file created from ConnectedPMOSPair.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_97BMAW a_n558_n3000# a_n500_n3097# a_500_n3000#
++ w_n758_n3297#
+X0 a_500_n3000# a_n500_n3097# a_n558_n3000# w_n758_n3297# sky130_fd_pr__pfet_g5v0d10v5 ad=8.7e+12p pd=6.058e+07u as=8.7e+12p ps=6.058e+07u w=3e+07u l=5e+06u
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_97TZA6 a_n200_n2097# a_200_n2000# w_n458_n2297#
++ a_n258_n2000#
+X0 a_200_n2000# a_n200_n2097# a_n258_n2000# w_n458_n2297# sky130_fd_pr__pfet_g5v0d10v5 ad=5.8e+12p pd=4.058e+07u as=5.8e+12p ps=4.058e+07u w=2e+07u l=2e+06u
+.ends
+
+.subckt PMOSPair Vs body CenterTap Vp Vd
+XXM12 Vs Vp CenterTap body sky130_fd_pr__pfet_g5v0d10v5_97BMAW
+XXM7 Vp CenterTap body Vd sky130_fd_pr__pfet_g5v0d10v5_97TZA6
+XXM8 Vp Vd body CenterTap sky130_fd_pr__pfet_g5v0d10v5_97TZA6
+XXM9 Vp CenterTap body Vd sky130_fd_pr__pfet_g5v0d10v5_97TZA6
+XXM10 Vp Vd body CenterTap sky130_fd_pr__pfet_g5v0d10v5_97TZA6
+XXM11 Vp CenterTap body Vd sky130_fd_pr__pfet_g5v0d10v5_97TZA6
+.ends
+
+*.subckt ConnectedPMOSPair Vss VP_LeftPin R_Pin
+XPMOSPair_0 Vss Vss PMOSPair_0/CenterTap VP_LeftPin R_Pin PMOSPair
+XPMOSPair_1 Vss Vss PMOSPair_1/CenterTap VP_LeftPin VP_LeftPin PMOSPair
+*.ends
+

@@ -1,0 +1,10 @@
+* NGSPICE file created from /home/arkhaios/Project/mag/CurRefResistor.ext - technology: sky130A
+
+.subckt sky130_fd_pr__res_xhigh_po_1p41_3ZBBQK a_n3862_n4398# a_3450_n4268# a_n3732_n4268#
+X0 a_n3732_n4268# a_3450_n4268# a_n3862_n4398# sky130_fd_pr__res_xhigh_po w=1.41e+06u l=7.8337e+08u
+.ends
+
+*.subckt x/home/arkhaios/Project/mag/CurRefResistor Pin1 Pin2
+Xsky130_fd_pr__res_xhigh_po_1p41_3ZBBQK_0 VSUBS Pin2 Pin1 sky130_fd_pr__res_xhigh_po_1p41
+*.ends
+

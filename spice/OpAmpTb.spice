@@ -1,0 +1,43 @@
+** sch_path: /home/arkhaios/Project/xschem/OpAmpTb.sch
+**.subckt OpAmpTb
+V1 Vcm GND sin(0 10n 1k) AC 0 DC 2.5
+.save i(v1)
+V2 Vdiff Vcm sin(0 1u 1k) AC 1 DC 0
+.save i(v2)
+V4 net1 GND 5
+.save i(v4)
+R1 Out GND 1G m=1
+X1 net1 Vdiff Vcm Out GND OpAmp1
+**** begin user architecture code
+
+* this option enables mos model bin
+* selection based on W/NF instead of W
+.include ~/Project/mag/OpAmp.spice
+*.include ~/Project/mag/CurrentRef.spice
+*.include ~/Project/mag/CurRefResistor.spice
+*.include ~/Project/mag/ConnectedNMOSPair.spice
+*.include ~/Project/mag/NMOSPair.spice
+*.include ~/Project/mag/GainStage.spice
+*.include ~/Project/mag/DifferentialPair.spice
+*.include ~/Project/mag/ConnectedPMOSPair.spice
+*.include ~/Project/mag/PMOSPair.spice
+.control
+op
+print all
+save all
+ac dec 10 1 1G
+plot Vdb(Out)
+
+
+.endc
+
+
+
+** opencircuitdesign pdks install
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

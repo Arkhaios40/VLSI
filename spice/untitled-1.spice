@@ -1,0 +1,203 @@
+** sch_path: /home/arkhaios/Project/xschem/untitled-1.sch
+**.subckt untitled-1
+V1 Vcm GND sin(0 10n 1k) AC 0 DC 2.5
+.save i(v1)
+V2 Vdiff Vcm sin(0 1u 1k) AC 1 DC 0
+.save i(v2)
+V4 net1 GND 5
+.save i(v4)
+x1 net1 Vdiff Vcm Out GND OpAmp1
+L2 Out Vdiff 1n m=1
+**** begin user architecture code
+
+** opencircuitdesign pdks install
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+
+* this option enables mos model bin
+* selection based on W/NF instead of W
+.control
+op
+print all
+save all
+ac dec 10 1 1G
+plot Vdb(Out)
+
+
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  PrimalStructures/OpAmp1.sym # of pins=5
+** sym_path: /home/arkhaios/Project/xschem/PrimalStructures/OpAmp1.sym
+** sch_path: /home/arkhaios/Project/xschem/PrimalStructures/OpAmp1.sch
+.subckt OpAmp1 VDD In+ In- Out Ground
+*.iopin VDD
+*.iopin In+
+*.iopin In-
+*.iopin Out
+*.iopin Ground
+x2 net3 net1 Ground ConnectedNMOSPair
+x3 VDD net1 net2 ConnectedPMOSPair
+x4 VDD VDD net4 net2 net5 PMOSPair
+x5 VDD VDD net6 net2 net7 PMOSPair
+x7 net6 net4 In+ In- net3 Ground DifferentialPair
+x8 VDD net5 net7 net2 Out Ground GainStage
+x9 VDD net2 Ground CurrentRef
+.ends
+
+
+* expanding   symbol:  PrimalStructures/Level2/ConnectedNMOSPair.sym # of pins=3
+** sym_path: /home/arkhaios/Project/xschem/PrimalStructures/Level2/ConnectedNMOSPair.sym
+** sch_path: /home/arkhaios/Project/xschem/PrimalStructures/Level2/ConnectedNMOSPair.sch
+.subckt ConnectedNMOSPair R_Pin L_Pin Vs
+*.iopin L_Pin
+*.iopin R_Pin
+*.iopin Vs
+x1 L_Pin L_Pin Vs Vs NMOSPair
+x2 R_Pin L_Pin Vs Vs NMOSPair
+.ends
+
+
+* expanding   symbol:  PrimalStructures/Level2/ConnectedPMOSPair.sym # of pins=3
+** sym_path: /home/arkhaios/Project/xschem/PrimalStructures/Level2/ConnectedPMOSPair.sym
+** sch_path: /home/arkhaios/Project/xschem/PrimalStructures/Level2/ConnectedPMOSPair.sch
+.subckt ConnectedPMOSPair Vss R_Pin VP_LeftPin
+*.iopin Vss
+*.iopin VP_LeftPin
+*.iopin R_Pin
+x1 Vss Vss net1 VP_LeftPin VP_LeftPin PMOSPair
+x2 Vss Vss net2 VP_LeftPin R_Pin PMOSPair
+.ends
+
+
+* expanding   symbol:  PrimalStructures/PMOSPair.sym # of pins=5
+** sym_path: /home/arkhaios/Project/xschem/PrimalStructures/PMOSPair.sym
+** sch_path: /home/arkhaios/Project/xschem/PrimalStructures/PMOSPair.sch
+.subckt PMOSPair Vs body CenterTap Vp Vd
+*.iopin Vp
+*.iopin Vs
+*.iopin body
+*.iopin Vd
+*.iopin CenterTap
+XM7 Vd Vp CenterTap body sky130_fd_pr__pfet_g5v0d10v5 L=2 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM8 Vd Vp CenterTap body sky130_fd_pr__pfet_g5v0d10v5 L=2 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM9 Vd Vp CenterTap body sky130_fd_pr__pfet_g5v0d10v5 L=2 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM10 Vd Vp CenterTap body sky130_fd_pr__pfet_g5v0d10v5 L=2 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM11 Vd Vp CenterTap body sky130_fd_pr__pfet_g5v0d10v5 L=2 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM12 CenterTap Vp Vs body sky130_fd_pr__pfet_g5v0d10v5 L=5 W=30 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  PrimalStructures/DifferentialPair.sym # of pins=6
+** sym_path: /home/arkhaios/Project/xschem/PrimalStructures/DifferentialPair.sym
+** sch_path: /home/arkhaios/Project/xschem/PrimalStructures/DifferentialPair.sch
+.subckt DifferentialPair D_Pin_L D_Pin_R D_In_L D_In_R NMOS_Vs Body
+*.iopin D_Pin_L
+*.iopin D_Pin_R
+*.iopin D_In_L
+*.iopin D_In_R
+*.iopin NMOS_Vs
+*.iopin Body
+XM19 D_Pin_L D_In_L NMOS_Vs Body sky130_fd_pr__nfet_g5v0d10v5 L=2 W=40 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM20 D_Pin_R D_In_R NMOS_Vs Body sky130_fd_pr__nfet_g5v0d10v5 L=2 W=40 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  PrimalStructures/GainStage.sym # of pins=6
+** sym_path: /home/arkhaios/Project/xschem/PrimalStructures/GainStage.sym
+** sch_path: /home/arkhaios/Project/xschem/PrimalStructures/GainStage.sch
+.subckt GainStage Vplus Gain_L_Pin Gain_R_Pin Gate_Ref Out Gain_Vs
+*.iopin Vplus
+*.iopin Gain_L_Pin
+*.iopin Gain_R_Pin
+*.iopin Gate_Ref
+*.iopin Out
+*.iopin Gain_Vs
+XM3 Out Gate_Ref Vplus Vplus sky130_fd_pr__pfet_g5v0d10v5 L=5 W=90 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 Out Gain_R_Pin Gain_Vs Gain_Vs sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=50 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM5 Gain_R_Pin Gain_L_Pin Gain_Vs Gain_Vs sky130_fd_pr__nfet_g5v0d10v5 L=3 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM6 Gain_L_Pin Gain_L_Pin Gain_Vs Gain_Vs sky130_fd_pr__nfet_g5v0d10v5 L=3 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XC1 Gain_R_Pin Out sky130_fd_pr__cap_mim_m3_1 W=1 L=1 MF=1 m=1
+.ends
+
+
+* expanding   symbol:  PrimalStructures/Level2/CurrentRef.sym # of pins=3
+** sym_path: /home/arkhaios/Project/xschem/PrimalStructures/Level2/CurrentRef.sym
+** sch_path: /home/arkhaios/Project/xschem/PrimalStructures/Level2/CurrentRef.sch
+.subckt CurrentRef Vplus Ref Vneg
+*.iopin Vplus
+*.iopin Ref
+*.iopin Vneg
+x6 Vplus net1 CurRefResistor
+x1 Ref net1 Vneg ConnectedNMOSPair
+.ends
+
+
+* expanding   symbol:  PrimalStructures/NMOSPair.sym # of pins=4
+** sym_path: /home/arkhaios/Project/xschem/PrimalStructures/NMOSPair.sym
+** sch_path: /home/arkhaios/Project/xschem/PrimalStructures/NMOSPair.sch
+.subckt NMOSPair Vd Vn Vnbody Vs
+*.iopin Vd
+*.iopin Vn
+*.iopin Vnbody
+*.iopin Vs
+XM1 Vd Vn net1 Vnbody sky130_fd_pr__nfet_g5v0d10v5 L=2 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Vd Vn net1 Vnbody sky130_fd_pr__nfet_g5v0d10v5 L=2 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 Vd Vn net1 Vnbody sky130_fd_pr__nfet_g5v0d10v5 L=2 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 Vd Vn net1 Vnbody sky130_fd_pr__nfet_g5v0d10v5 L=2 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM5 Vd Vn net1 Vnbody sky130_fd_pr__nfet_g5v0d10v5 L=2 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM6 net1 Vn Vs Vnbody sky130_fd_pr__nfet_g5v0d10v5 L=5 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  PrimalStructures/CurRefResistor.sym # of pins=2
+** sym_path: /home/arkhaios/Project/xschem/PrimalStructures/CurRefResistor.sym
+** sch_path: /home/arkhaios/Project/xschem/PrimalStructures/CurRefResistor.sch
+.subckt CurRefResistor Pin1 Pin2
+*.iopin Pin1
+*.iopin Pin2
+XR1 Pin2 Pin1 GND sky130_fd_pr__res_xhigh_po_1p41 L=40 mult=1 m=1
+.ends
+
+.GLOBAL GND
+.end

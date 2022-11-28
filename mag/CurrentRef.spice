@@ -1,0 +1,39 @@
+* NGSPICE file created from /home/arkhaios/Project/mag/CurrentRef.ext - technology: sky130A
+
+.subckt sky130_fd_pr__res_xhigh_po_1p41_3ZBBQK a_n3862_n4398# a_3450_n4268# a_n3732_n4268#
+X0 a_n3732_n4268# a_3450_n4268# a_n3862_n4398# sky130_fd_pr__res_xhigh_po w=1.41e+06u l=7.8337e+08u
+.ends
+
+.subckt CurRefResistor Pin1 Pin2
+Xsky130_fd_pr__res_xhigh_po_1p41_3ZBBQK_0 VSUBS Pin2 Pin1 sky130_fd_pr__res_xhigh_po_1p41
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_HYQESV a_200_n2031# a_n258_n2031# a_n392_n2191#
++ a_n200_n2057#
+X0 a_200_n2031# a_n200_n2057# a_n258_n2031# a_n392_n2191# sky130_fd_pr__nfet_g5v0d10v5 ad=5.8e+12p pd=4.058e+07u as=5.8e+12p ps=4.058e+07u w=2e+07u l=2e+06u
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_VSVLYK a_n558_n1031# a_n692_n1191# a_n500_n1057#
++ a_500_n1031#
+X0 a_500_n1031# a_n500_n1057# a_n558_n1031# a_n692_n1191# sky130_fd_pr__nfet_g5v0d10v5 ad=2.9e+12p pd=2.058e+07u as=2.9e+12p ps=2.058e+07u w=1e+07u l=5e+06u
+.ends
+
+.subckt NMOSPair Vd Vn S VSUBS
+Xsky130_fd_pr__nfet_g5v0d10v5_HYQESV_0 m1_n2132_2872# Vd VSUBS Vn sky130_fd_pr__nfet_g5v0d10v5_HYQESV
+Xsky130_fd_pr__nfet_g5v0d10v5_HYQESV_1 m1_n2132_2872# Vd VSUBS Vn sky130_fd_pr__nfet_g5v0d10v5_HYQESV
+Xsky130_fd_pr__nfet_g5v0d10v5_VSVLYK_0 S VSUBS Vn Vd sky130_fd_pr__nfet_g5v0d10v5_VSVLYK
+Xsky130_fd_pr__nfet_g5v0d10v5_HYQESV_2 Vd m1_n2132_2872# VSUBS Vn sky130_fd_pr__nfet_g5v0d10v5_HYQESV
+Xsky130_fd_pr__nfet_g5v0d10v5_HYQESV_3 m1_n2132_2872# Vd VSUBS Vn sky130_fd_pr__nfet_g5v0d10v5_HYQESV
+Xsky130_fd_pr__nfet_g5v0d10v5_HYQESV_4 Vd m1_n2132_2872# VSUBS Vn sky130_fd_pr__nfet_g5v0d10v5_HYQESV
+.ends
+
+.subckt ConnectedNMOSPair R_Pin L_Pin Vs
+XNMOSPair_0 R_Pin L_Pin Vs Vs NMOSPair
+XNMOSPair_1 L_Pin L_Pin Vs Vs NMOSPair
+.ends
+
+*.subckt x/home/arkhaios/Project/mag/CurrentRef Vplus Ref Vneg
+XCurRefResistor_0 Vplus CurRefResistor_0/Pin2 CurRefResistor
+XConnectedNMOSPair_0 Ref CurRefResistor_0/Pin2 Vneg ConnectedNMOSPair
+*.ends
+

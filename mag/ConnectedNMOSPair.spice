@@ -1,0 +1,6 @@
+* SPICE3 file created from ConnectedNMOSPair.ext - technology: sky130A
+
+*.subckt ConnectedNMOSPair L_Pin R_Pin Vs
+XNMOSPair_0 R_Pin L_Pin Vs Vs NMOSPair
+XNMOSPair_1 L_Pin L_Pin Vs Vs NMOSPair
+*.ends

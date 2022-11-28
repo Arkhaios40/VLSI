@@ -1,0 +1,40 @@
+timestamp 1669422754
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use CurRefResistor CurRefResistor_0 1 0 -9935 0 1 -9501
+use ConnectedNMOSPair ConnectedNMOSPair_0 1 0 5644 0 1 4184
+port "Ref" 2 5652 13250 6308 13938 m3
+port "Vneg" 3 2521 2635 3111 4100 m2
+port "Vplus" 0 -7985 11496 -6352 12214 m1
+node "Ref" 0 2414.8 5652 13250 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1313968 5318 891604 4030 0 0 0 0 0 0
+node "Vneg" 1 2094.84 2521 2635 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 355180 2384 1219530 5314 0 0 0 0 0 0 0 0
+node "Vplus" 60 4795.97 -7985 11496 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1689368 6808 1709846 6198 0 0 0 0 0 0 0 0 0 0
+node "li_n1202_11592#" 60 4659.55 -1202 11592 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1541660 6488 1139814 4754 779886 3674 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "ConnectedNMOSPair_0/NMOSPair_1/S" "ConnectedNMOSPair_0/NMOSPair_1/sky130_fd_pr__nfet_g5v0d10v5_VSVLYK_0/a_500_n1031#" 0.836426
+cap "ConnectedNMOSPair_0/NMOSPair_1/S" "ConnectedNMOSPair_0/NMOSPair_1/sky130_fd_pr__nfet_g5v0d10v5_VSVLYK_0/a_n500_n1057#" 14.3982
+cap "ConnectedNMOSPair_0/NMOSPair_1/S" "ConnectedNMOSPair_0/L_Pin" 111.325
+cap "ConnectedNMOSPair_0/NMOSPair_1/S" "ConnectedNMOSPair_0/NMOSPair_1/sky130_fd_pr__nfet_g5v0d10v5_VSVLYK_0/a_n692_n1191#" 2.22045e-16
+cap "ConnectedNMOSPair_0/NMOSPair_1/S" "ConnectedNMOSPair_0/NMOSPair_1/sky130_fd_pr__nfet_g5v0d10v5_VSVLYK_0/a_500_n1031#" 0.411823
+cap "CurRefResistor_0/sky130_fd_pr__res_xhigh_po_1p41_3ZBBQK_0/a_n3862_n4398#" "CurRefResistor_0/Pin1" 9.73605
+cap "CurRefResistor_0/sky130_fd_pr__res_xhigh_po_1p41_3ZBBQK_0/a_n3862_n4398#" "CurRefResistor_0/Pin1" 5.58037
+cap "CurRefResistor_0/Pin2" "CurRefResistor_0/sky130_fd_pr__res_xhigh_po_1p41_3ZBBQK_0/a_n3862_n4398#" 1.3337
+cap "CurRefResistor_0/Pin2" "CurRefResistor_0/sky130_fd_pr__res_xhigh_po_1p41_3ZBBQK_0/a_n3862_n4398#" 22.7385
+cap "CurRefResistor_0/sky130_fd_pr__res_xhigh_po_1p41_3ZBBQK_0/a_n3862_n4398#" "CurRefResistor_0/Pin2" 0.953101
+cap "CurRefResistor_0/sky130_fd_pr__res_xhigh_po_1p41_3ZBBQK_0/a_n3862_n4398#" "CurRefResistor_0/Pin1" 9.0342
+cap "CurRefResistor_0/sky130_fd_pr__res_xhigh_po_1p41_3ZBBQK_0/a_n3862_n4398#" "CurRefResistor_0/Pin1" 16.0633
+cap "CurRefResistor_0/sky130_fd_pr__res_xhigh_po_1p41_3ZBBQK_0/a_n3862_n4398#" "CurRefResistor_0/Pin2" 7.5259
+cap "CurRefResistor_0/sky130_fd_pr__res_xhigh_po_1p41_3ZBBQK_0/a_n3862_n4398#" "CurRefResistor_0/Pin2" 20.456
+merge "CurRefResistor_0/VSUBS" "ConnectedNMOSPair_0/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "ConnectedNMOSPair_0/VSUBS" "VSUBS"
+merge "CurRefResistor_0/sky130_fd_pr__res_xhigh_po_1p41_3ZBBQK_0/a_3450_n4268#" "CurRefResistor_0/Pin2" -1697.95 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -111488 -1368 0 0 -767647 -3664 0 0 0 0 0 0 0 0
+merge "CurRefResistor_0/Pin2" "ConnectedNMOSPair_0/L_Pin"
+merge "ConnectedNMOSPair_0/L_Pin" "ConnectedNMOSPair_0/NMOSPair_1/Vd"
+merge "ConnectedNMOSPair_0/NMOSPair_1/Vd" "li_n1202_11592#"
+merge "ConnectedNMOSPair_0/Vs" "ConnectedNMOSPair_0/NMOSPair_1/S" -1033.38 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -348562 -2372 0 0 0 0 0 0 0 0 0 0
+merge "ConnectedNMOSPair_0/NMOSPair_1/S" "Vneg"
+merge "CurRefResistor_0/Pin1" "Vplus" -431.802 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -113832 -1374 0 0 0 0 0 0 0 0 0 0 0 0
+merge "ConnectedNMOSPair_0/R_Pin" "Ref" -1062.74 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -600896 -3144 -67568 -862 0 0 0 0 0 0

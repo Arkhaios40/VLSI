@@ -1,0 +1,29 @@
+v {xschem version=3.1.0 file_version=1.2}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+T {@symname} -90 -6 0 0 0.3 0.3 {}
+T {@name} 135 -72 0 0 0.2 0.2 {}
+L 4 -130 -60 130 -60 {}
+L 4 -130 60 130 60 {}
+L 4 -130 -60 -130 60 {}
+L 4 130 -60 130 60 {}
+B 5 147.5 -52.5 152.5 -47.5 {name=D_Pin_L dir=inout }
+L 7 130 -50 150 -50 {}
+T {D_Pin_L} 125 -54 0 1 0.2 0.2 {}
+B 5 147.5 -32.5 152.5 -27.5 {name=D_Pin_R dir=inout }
+L 7 130 -30 150 -30 {}
+T {D_Pin_R} 125 -34 0 1 0.2 0.2 {}
+B 5 147.5 -12.5 152.5 -7.5 {name=D_In_L dir=inout }
+L 7 130 -10 150 -10 {}
+T {D_In_L} 125 -14 0 1 0.2 0.2 {}
+B 5 147.5 7.5 152.5 12.5 {name=D_In_R dir=inout }
+L 7 130 10 150 10 {}
+T {D_In_R} 125 6 0 1 0.2 0.2 {}
+B 5 147.5 27.5 152.5 32.5 {name=NMOS_Vs dir=inout }
+L 7 130 30 150 30 {}
+T {NMOS_Vs} 125 26 0 1 0.2 0.2 {}
+B 5 147.5 47.5 152.5 52.5 {name=Body dir=inout }
+L 7 130 50 150 50 {}
+T {Body} 125 46 0 1 0.2 0.2 {}

@@ -1,0 +1,163 @@
+timestamp 1669588854
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use PMOSPair PMOSPair_0 1 0 848 0 1 -1666
+use PMOSPair PMOSPair_1 1 0 -7978 0 1 -1660
+port "R_Pin" 2 1030 -1226 5796 -490 m1
+port "VP_LeftPin" 1 -7830 -1262 -2968 -598 m1
+port "Vss" 0 -7610 6770 6664 7648 v0
+node "R_Pin" 0 6497.38 1030 -1226 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6351016 12284 0 0 0 0 0 0 0 0 0 0
+node "VP_LeftPin" 265 15063.5 -7830 -1262 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6009688 23388 6748456 12500 0 0 0 0 0 0 0 0 0 0
+node "Vss" 14 42767.8 -7610 6770 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24719408 53684 22336416 33196 0 0 0 0 0 0 0 0 0 0
+node "a_n3678_3836#" 1541 0 -3678 3836 mvnnd 0 0 0 0 0 0 0 0 0 0 0 0 45472 1684 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "VP_LeftPin" "R_Pin" 214.521
+cap "a_n3678_3836#" "Vss" 5.24418
+cap "PMOSPair_1/XM11/a_200_n2000#" "PMOSPair_1/m1_162_3398#" 12.2862
+cap "PMOSPair_1/XM11/w_n458_n2297#" "PMOSPair_1/m1_162_3398#" 72.8623
+cap "PMOSPair_1/XM11/a_200_n2000#" "PMOSPair_1/m1_162_3398#" 19.2675
+cap "PMOSPair_1/m1_162_3398#" "PMOSPair_1/XM11/w_n458_n2297#" 104.605
+cap "PMOSPair_1/XM11/a_n258_n2000#" "PMOSPair_1/XM11/w_n458_n2297#" 104.762
+cap "PMOSPair_1/XM10/a_n200_n2097#" "PMOSPair_1/XM11/a_n258_n2000#" 2.62869
+cap "PMOSPair_1/XM11/a_200_n2000#" "PMOSPair_1/XM11/a_n258_n2000#" 19.2675
+cap "PMOSPair_1/XM11/a_n200_n2097#" "PMOSPair_1/XM11/a_n258_n2000#" 32.2877
+cap "PMOSPair_1/XM11/m1_n196_n2087#" "PMOSPair_1/XM11/a_n258_n2000#" 1.93678
+cap "PMOSPair_1/XM10/a_n200_n2097#" "PMOSPair_1/XM11/a_n258_n2000#" 4.50417
+cap "PMOSPair_1/XM10/m1_n196_n2087#" "PMOSPair_1/XM11/a_n258_n2000#" 0.155287
+cap "PMOSPair_1/XM11/a_n258_n2000#" "PMOSPair_1/XM11/a_200_n2000#" 27.0904
+cap "PMOSPair_1/XM11/a_n258_n2000#" "PMOSPair_1/XM11/w_n458_n2297#" 160.396
+cap "PMOSPair_1/XM11/a_n200_n2097#" "PMOSPair_1/XM11/a_n258_n2000#" 55.0672
+cap "PMOSPair_0/XM11/a_200_n2000#" "PMOSPair_0/XM11/a_n200_n2097#" 15.3622
+cap "PMOSPair_0/m1_162_3398#" "PMOSPair_0/XM11/a_n200_n2097#" 5.35368
+cap "PMOSPair_0/XM11/a_200_n2000#" "PMOSPair_0/m1_162_3398#" 0.109079
+cap "PMOSPair_0/m1_162_3398#" "PMOSPair_0/XM11/w_n458_n2297#" 0.8016
+cap "PMOSPair_0/XM11/a_n200_n2097#" "PMOSPair_0/m1_162_3398#" 3.04084
+cap "PMOSPair_1/XM11/w_n458_n2297#" "PMOSPair_1/m1_162_3398#" 65.2665
+cap "PMOSPair_1/XM11/a_200_n2000#" "PMOSPair_1/m1_162_3398#" 23.3735
+cap "PMOSPair_1/m1_162_3398#" "PMOSPair_1/XM11/w_n458_n2297#" 70.3268
+cap "PMOSPair_1/m1_162_3398#" "PMOSPair_1/XM11/a_200_n2000#" 65.1632
+cap "PMOSPair_1/XM11/a_200_n2000#" "PMOSPair_1/XM11/a_n258_n2000#" 65.1632
+cap "PMOSPair_1/XM11/a_n258_n2000#" "PMOSPair_1/XM11/w_n458_n2297#" 70.3268
+cap "PMOSPair_1/XM11/a_200_n2000#" "PMOSPair_1/XM11/a_n258_n2000#" 36.3492
+cap "PMOSPair_1/XM11/a_n258_n2000#" "PMOSPair_1/XM11/m1_n196_n2087#" 0.95793
+cap "PMOSPair_1/XM11/a_n200_n2097#" "PMOSPair_1/XM11/a_n258_n2000#" 9.07607
+cap "PMOSPair_1/XM10/m1_n196_n2087#" "PMOSPair_1/XM11/a_n258_n2000#" 0.284354
+cap "PMOSPair_1/XM10/a_n200_n2097#" "PMOSPair_1/XM11/a_n258_n2000#" 0.578668
+cap "PMOSPair_1/XM11/a_n258_n2000#" "PMOSPair_1/XM11/w_n458_n2297#" 95.4232
+cap "PMOSPair_1/XM11/a_200_n2000#" "PMOSPair_1/XM11/w_n458_n2297#" 5.58305
+cap "PMOSPair_1/XM11/w_n458_n2297#" "PMOSPair_1/XM11/m1_n196_n2087#" 0.630194
+cap "PMOSPair_1/XM11/a_n200_n2097#" "PMOSPair_1/XM11/w_n458_n2297#" 17.9179
+cap "PMOSPair_0/XM11/w_n458_n2297#" "PMOSPair_0/XM11/a_n200_n2097#" 43.0406
+cap "PMOSPair_0/XM11/a_200_n2000#" "PMOSPair_0/XM11/a_n200_n2097#" 38.8296
+cap "PMOSPair_0/m1_162_3398#" "PMOSPair_0/XM11/a_n200_n2097#" 36.7362
+cap "PMOSPair_0/XM11/a_200_n2000#" "PMOSPair_0/XM11/w_n458_n2297#" -0.423509
+cap "PMOSPair_0/m1_162_3398#" "PMOSPair_0/XM11/w_n458_n2297#" -1.64308
+cap "PMOSPair_0/m1_162_3398#" "PMOSPair_0/XM11/w_n458_n2297#" 179.168
+cap "PMOSPair_0/m1_162_3398#" "PMOSPair_0/XM11/a_200_n2000#" 26.5084
+cap "PMOSPair_0/XM11/a_200_n2000#" "PMOSPair_0/XM11/a_n200_n2097#" 0.332259
+cap "PMOSPair_0/m1_162_3398#" "PMOSPair_0/XM11/a_n200_n2097#" 13.1123
+cap "PMOSPair_0/m1_162_3398#" "PMOSPair_0/XM11/a_200_n2000#" 27.2093
+cap "PMOSPair_0/m1_162_3398#" "PMOSPair_0/XM11/w_n458_n2297#" 186.718
+cap "PMOSPair_0/XM11/w_n458_n2297#" "PMOSPair_0/XM11/a_n258_n2000#" 202.702
+cap "PMOSPair_0/XM11/a_200_n2000#" "PMOSPair_0/XM11/a_n258_n2000#" 23.1505
+cap "PMOSPair_0/XM10/a_n200_n2097#" "PMOSPair_0/XM11/a_n258_n2000#" 0.306048
+cap "PMOSPair_0/XM11/a_n200_n2097#" "PMOSPair_0/XM11/a_n258_n2000#" 4.79893
+cap "PMOSPair_0/XM11/a_n258_n2000#" "PMOSPair_0/XM11/w_n458_n2297#" 11.3841
+cap "PMOSPair_0/XM11/a_n200_n2097#" "PMOSPair_0/CenterTap" 0.0767215
+cap "PMOSPair_1/XM10/a_200_n2000#" "PMOSPair_1/body" 23.946
+cap "PMOSPair_1/XM7/m1_n196_n2087#" "PMOSPair_1/body" 50.5701
+cap "PMOSPair_1/XM7/a_n200_n2097#" "PMOSPair_1/body" 21.4085
+cap "PMOSPair_1/body" "PMOSPair_1/XM10/a_200_n2000#" 58.2059
+cap "PMOSPair_1/body" "PMOSPair_0/Vp" 5.11583
+cap "PMOSPair_0/CenterTap" "PMOSPair_1/body" 11.0835
+cap "PMOSPair_0/XM10/w_n458_n2297#" "PMOSPair_1/body" 4.09459
+cap "PMOSPair_0/CenterTap" "Vss" 45.1541
+cap "PMOSPair_0/Vp" "Vss" 4.568
+cap "PMOSPair_0/CenterTap" "PMOSPair_0/Vp" -3.51098
+cap "PMOSPair_0/body" "PMOSPair_0/XM7/a_n200_n2097#" 23.2435
+cap "PMOSPair_0/body" "PMOSPair_0/XM7/m1_n196_n2087#" 53.4831
+cap "PMOSPair_0/XM7/a_n200_n2097#" "PMOSPair_0/body" -7.10543e-15
+cap "PMOSPair_0/body" "PMOSPair_0/XM10/a_200_n2000#" 87.7756
+cap "PMOSPair_0/body" "PMOSPair_0/XM7/m1_n196_n2087#" 4.44089e-16
+cap "PMOSPair_1/Vs" "PMOSPair_1/XM12/w_n758_n3297#" 0.00888799
+cap "PMOSPair_1/Vs" "PMOSPair_1/XM12/a_500_n3000#" 0.545109
+cap "PMOSPair_1/CenterTap" "PMOSPair_1/Vs" 2.10323
+cap "PMOSPair_1/XM9/w_n458_n2297#" "PMOSPair_1/Vs" 0.00165137
+cap "PMOSPair_1/Vs" "PMOSPair_1/body" 0.00165137
+cap "PMOSPair_1/XM7/a_200_n2000#" "PMOSPair_1/Vs" 2.10323
+cap "PMOSPair_1/XM7/a_200_n2000#" "PMOSPair_1/body" 16.0973
+cap "PMOSPair_1/body" "PMOSPair_1/XM7/a_n200_n2097#" 7.7988
+cap "PMOSPair_1/body" "PMOSPair_1/Vs" 0.0855251
+cap "PMOSPair_1/XM12/a_n500_n3097#" "PMOSPair_1/body" 4.13418
+cap "PMOSPair_1/body" "PMOSPair_1/XM8/a_200_n2000#" -3.37427
+cap "PMOSPair_1/XM7/a_200_n2000#" "PMOSPair_1/Vs" 2.10323
+cap "PMOSPair_1/body" "PMOSPair_1/XM7/m1_n196_n2087#" 17.6887
+cap "PMOSPair_1/body" "PMOSPair_1/XM7/a_200_n2000#" 120.818
+cap "PMOSPair_1/XM12/a_n500_n3097#" "PMOSPair_1/body" 55.2974
+cap "PMOSPair_1/XM8/a_200_n2000#" "PMOSPair_1/body" -8.87589
+cap "PMOSPair_0/Vs" "PMOSPair_1/XM12/a_500_n3000#" 5.16304
+cap "PMOSPair_0/XM9/w_n458_n2297#" "PMOSPair_0/Vs" 21.8777
+cap "PMOSPair_0/Vs" "PMOSPair_0/CenterTap" 32.1159
+cap "PMOSPair_0/Vs" "PMOSPair_0/Vp" 24.1958
+cap "PMOSPair_1/XM12/a_n500_n3097#" "PMOSPair_0/Vs" 105.413
+cap "PMOSPair_0/Vp" "PMOSPair_0/Vs" 20.7697
+cap "PMOSPair_0/CenterTap" "PMOSPair_0/Vp" -7.89455
+cap "PMOSPair_0/CenterTap" "PMOSPair_1/XM12/w_n758_n3297#" 0.0649692
+cap "PMOSPair_0/CenterTap" "PMOSPair_0/Vs" 76.5623
+cap "PMOSPair_0/XM9/w_n458_n2297#" "PMOSPair_0/Vs" 0.0150942
+cap "PMOSPair_0/CenterTap" "PMOSPair_0/Vs" 2.20881
+cap "PMOSPair_0/XM12/a_500_n3000#" "PMOSPair_0/Vs" 2.10323
+cap "PMOSPair_0/body" "PMOSPair_0/Vs" 0.00165137
+cap "PMOSPair_0/XM7/a_200_n2000#" "PMOSPair_0/Vs" 2.10323
+cap "PMOSPair_0/body" "PMOSPair_0/Vs" 0.00165137
+cap "PMOSPair_0/XM7/m1_n196_n2087#" "PMOSPair_0/body" 16.4015
+cap "PMOSPair_0/XM7/a_200_n2000#" "PMOSPair_0/body" 14.774
+cap "PMOSPair_0/body" "PMOSPair_0/XM7/a_n200_n2097#" 7.34004
+cap "PMOSPair_0/XM8/a_200_n2000#" "PMOSPair_0/body" -13.2755
+cap "PMOSPair_0/XM12/a_n500_n3097#" "PMOSPair_0/body" 35.419
+cap "PMOSPair_0/body" "PMOSPair_0/XM7/a_200_n2000#" 109.002
+cap "PMOSPair_0/XM12/a_500_n3000#" "PMOSPair_0/body" 64.7313
+cap "PMOSPair_0/XM12/a_n500_n3097#" "PMOSPair_0/body" 187.034
+cap "PMOSPair_1/Vp" "PMOSPair_1/Vs" 18.5795
+cap "PMOSPair_1/Vs" "PMOSPair_1/XM12/a_500_n3000#" 0.0027586
+cap "PMOSPair_1/Vs" "PMOSPair_1/XM12/w_n758_n3297#" 37.8664
+cap "PMOSPair_1/Vs" "PMOSPair_1/XM12/w_n758_n3297#" 147.615
+cap "PMOSPair_1/Vs" "PMOSPair_1/Vp" 65.107
+cap "PMOSPair_1/XM12/a_n500_n3097#" "PMOSPair_1/Vs" 65.107
+cap "PMOSPair_1/Vs" "PMOSPair_1/body" 147.615
+cap "PMOSPair_1/Vs" "PMOSPair_1/XM12/a_n500_n3097#" 65.107
+cap "PMOSPair_1/Vs" "PMOSPair_1/body" 147.928
+cap "PMOSPair_1/XM12/a_n500_n3097#" "PMOSPair_1/body" 70.3041
+cap "PMOSPair_1/XM7/a_200_n2000#" "PMOSPair_1/body" 0.00515223
+cap "PMOSPair_0/Vs" "PMOSPair_1/XM12/a_n500_n3097#" 44.001
+cap "PMOSPair_0/Vs" "PMOSPair_0/Vp" 3.7896
+cap "PMOSPair_0/Vs" "PMOSPair_0/XM12/w_n758_n3297#" 8.82563
+cap "PMOSPair_0/CenterTap" "PMOSPair_0/Vs" 9.94411
+cap "PMOSPair_0/XM12/w_n758_n3297#" "PMOSPair_0/Vs" 39.7909
+cap "PMOSPair_0/XM12/w_n758_n3297#" "PMOSPair_0/Vp" 5.01463
+cap "PMOSPair_0/Vs" "PMOSPair_0/Vp" 102.55
+cap "PMOSPair_0/Vs" "PMOSPair_0/Vp" 70.4876
+cap "PMOSPair_0/CenterTap" "PMOSPair_0/Vs" 0.00452274
+cap "PMOSPair_0/XM12/w_n758_n3297#" "PMOSPair_0/Vs" 150.071
+cap "PMOSPair_0/Vs" "PMOSPair_0/XM12/a_n500_n3097#" 65.1891
+cap "PMOSPair_0/Vs" "PMOSPair_0/body" 148.414
+cap "PMOSPair_0/Vs" "PMOSPair_0/XM12/a_n500_n3097#" 65.1891
+cap "PMOSPair_0/Vs" "PMOSPair_0/body" 148.414
+cap "PMOSPair_0/XM7/a_200_n2000#" "PMOSPair_0/body" 5.77316e-15
+cap "PMOSPair_0/body" "PMOSPair_0/XM12/a_n500_n3097#" 65.1891
+cap "PMOSPair_0/XM12/a_500_n3000#" "PMOSPair_0/body" 0.0167902
+cap "PMOSPair_0/body" "PMOSPair_0/XM12/a_n500_n3097#" 69.5389
+merge "PMOSPair_0/VSUBS" "PMOSPair_1/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "PMOSPair_1/VSUBS" "VSUBS"
+merge "PMOSPair_0/Vs" "PMOSPair_1/Vs" -12461.1 0 0 0 0 0 0 0 0 0 0 0 0 -36760 -1684 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -174640 -2882 -1763220 -24108 0 0 0 0 0 0 0 0 0 0
+merge "PMOSPair_1/Vs" "PMOSPair_0/body"
+merge "PMOSPair_0/body" "PMOSPair_1/body"
+merge "PMOSPair_1/body" "Vss"
+merge "Vss" "a_n3678_3836#"
+merge "PMOSPair_0/m1_162_3398#" "R_Pin" -4169.38 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2960328 -11024 0 0 0 0 0 0 0 0 0 0
+merge "PMOSPair_0/Vp" "PMOSPair_1/m1_162_3398#" -12039.5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4460408 -17464 -4453364 -11162 0 0 0 0 0 0 0 0 0 0
+merge "PMOSPair_1/m1_162_3398#" "PMOSPair_1/Vp"
+merge "PMOSPair_1/Vp" "VP_LeftPin"

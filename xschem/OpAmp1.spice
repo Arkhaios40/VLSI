@@ -1,0 +1,48 @@
+* NGSPICE file created from OpAmp.ext - technology: sky130A
+
+.subckt OpAmp VDD In+ In- Out Ground
+X0 PMOSPair_0/CenterTap PMOSPair_1/Vp VDD VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=6.09e+13p ps=4.2406e+08u w=3e+07u l=5e+06u
+X1 PMOSPair_0/CenterTap PMOSPair_1/Vp GainStage_0/Gain_L_Pin VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=2e+07u l=2e+06u
+X2 GainStage_0/Gain_L_Pin PMOSPair_1/Vp PMOSPair_0/CenterTap VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=2e+07u l=2e+06u
+X3 PMOSPair_0/CenterTap PMOSPair_1/Vp GainStage_0/Gain_L_Pin VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=2e+07u l=2e+06u
+X4 GainStage_0/Gain_L_Pin PMOSPair_1/Vp PMOSPair_0/CenterTap VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=2e+07u l=2e+06u
+X5 PMOSPair_0/CenterTap PMOSPair_1/Vp GainStage_0/Gain_L_Pin VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=2e+07u l=2e+06u
+X6 PMOSPair_1/CenterTap PMOSPair_1/Vp VDD VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=3e+07u l=5e+06u
+X7 PMOSPair_1/CenterTap PMOSPair_1/Vp GainStage_0/Gain_R_Pin VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=2e+07u l=2e+06u
+X8 GainStage_0/Gain_R_Pin PMOSPair_1/Vp PMOSPair_1/CenterTap VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=2e+07u l=2e+06u
+X9 PMOSPair_1/CenterTap PMOSPair_1/Vp GainStage_0/Gain_R_Pin VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=2e+07u l=2e+06u
+X10 GainStage_0/Gain_R_Pin PMOSPair_1/Vp PMOSPair_1/CenterTap VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=2e+07u l=2e+06u
+X11 PMOSPair_1/CenterTap PMOSPair_1/Vp GainStage_0/Gain_R_Pin VDD sky130_fd_pr__pfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=2e+07u l=2e+06u
+C0 ConnectedPMOSPair_1/PMOSPair_0/CenterTap VDD 18.67fF
+C1 GainStage_0/Gain_L_Pin VDD 15.81fF
+C2 Out VDD 15.49fF
+C3 PMOSPair_1/Vp ConnectedPMOSPair_1/PMOSPair_1/CenterTap 12.34fF
+C4 ConnectedPMOSPair_1/R_Pin VDD 16.36fF
+C5 VDD ConnectedPMOSPair_1/PMOSPair_1/CenterTap 18.46fF
+C6 PMOSPair_0/CenterTap VDD 18.31fF
+C7 GainStage_0/Gain_R_Pin VDD 15.90fF
+C8 PMOSPair_1/Vp VDD 68.32fF
+C9 PMOSPair_1/CenterTap VDD 18.56fF
+XConnectedPMOSPair_1 VDD PMOSPair_1/Vp ConnectedPMOSPair_1/R_Pin ConnectedPMOSPair
+XDifferentialPair_0 PMOSPair_0/CenterTap PMOSPair_1/CenterTap In+ In- ConnectedNMOSPair_0/R_Pin
++ Ground DifferentialPair
+XGainStage_0 VDD GainStage_0/Gain_L_Pin GainStage_0/Gain_R_Pin PMOSPair_1/Vp Out Ground
++ GainStage
+XConnectedNMOSPair_0 ConnectedPMOSPair_1/R_Pin ConnectedNMOSPair_0/R_Pin Ground ConnectedNMOSPair
+XCurrentRef_0 VDD PMOSPair_1/Vp Ground CurrentRef
+C10 CurrentRef_0/CurRefResistor_0/Pin2 Ground 44.26fF
+C11 CurrentRef_0/ConnectedNMOSPair_0/NMOSPair_1/m1_n2132_2872# Ground 16.43fF $ **FLOATING
+C12 CurrentRef_0/ConnectedNMOSPair_0/NMOSPair_0/m1_n2132_2872# Ground 16.39fF $ **FLOATING
+C13 ConnectedPMOSPair_1/R_Pin Ground 52.96fF
+C14 ConnectedNMOSPair_0/NMOSPair_1/m1_n2132_2872# Ground 16.43fF $ **FLOATING
+C15 ConnectedNMOSPair_0/R_Pin Ground 32.46fF
+C16 ConnectedNMOSPair_0/NMOSPair_0/m1_n2132_2872# Ground 16.88fF $ **FLOATING
+C17 Out Ground 22.30fF
+C18 In- Ground 14.91fF
+C19 PMOSPair_1/CenterTap Ground 16.02fF
+C20 GainStage_0/Gain_R_Pin Ground 22.09fF
+C21 PMOSPair_0/CenterTap Ground 18.34fF
+C22 GainStage_0/Gain_L_Pin Ground 23.09fF
+C23 PMOSPair_1/Vp Ground 64.56fF
+C24 VDD Ground 593.66fF
+.ends

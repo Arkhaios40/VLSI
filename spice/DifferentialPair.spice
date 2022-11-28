@@ -1,0 +1,16 @@
+** sch_path: /home/arkhaios/Project/xschem/PrimalStructures/DifferentialPair.sch
+**.subckt DifferentialPair D_Pin_L D_Pin_R D_In_L D_In_R NMOS_Vs Body
+*.iopin D_Pin_L
+*.iopin D_Pin_R
+*.iopin D_In_L
+*.iopin D_In_R
+*.iopin NMOS_Vs
+*.iopin Body
+XM19 D_Pin_L D_In_L NMOS_Vs Body sky130_fd_pr__nfet_g5v0d10v5 L=2 W=40 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM20 D_Pin_R D_In_R NMOS_Vs Body sky130_fd_pr__nfet_g5v0d10v5 L=2 W=40 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+**.ends
+.end

@@ -1,0 +1,10 @@
+* SPICE3 file created from NMOSPair.ext - technology: sky130A
+
+.subckt NMOSPair S Vn Vnbody Vd
+X0 m1_n2132_2872# Vn Vd Vnbody sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=3.19e+13p ps=2.2348e+08u w=2e+07u l=2e+06u
+X1 m1_n2132_2872# Vn Vd Vnbody sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=2e+07u l=2e+06u
+X2 Vd Vn S Vnbody sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=2.9e+12p ps=2.058e+07u w=1e+07u l=5e+06u
+X3 Vd Vn m1_n2132_2872# Vnbody sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=2e+07u l=2e+06u
+X4 m1_n2132_2872# Vn Vd Vnbody sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=2e+07u l=2e+06u
+X5 Vd Vn m1_n2132_2872# Vnbody sky130_fd_pr__nfet_g5v0d10v5 ad=0p pd=0u as=0p ps=0u w=2e+07u l=2e+06u
+.ends

@@ -1,0 +1,60 @@
+magic
+tech sky130A
+timestamp 1669244576
+<< locali >>
+rect -970 210 -733 1056
+rect 198 525 414 801
+rect 1647 210 1899 1090
+rect -970 152 1899 210
+rect -970 11 -757 152
+rect 1333 11 1899 152
+rect -970 -27 1899 11
+rect -970 -37 1894 -27
+<< viali >>
+rect -2769 998 -2677 3030
+rect -78 525 198 801
+rect -757 11 1333 152
+<< metal1 >>
+rect 4 3536 332 3539
+rect -2919 3508 -2591 3511
+rect -2919 3030 -2591 3180
+rect -2919 2987 -2769 3030
+rect -2884 998 -2769 2987
+rect -2677 2987 -2591 3030
+rect -2677 998 -2608 2987
+rect 4 2976 332 3208
+rect -2884 801 -2608 998
+rect -81 801 201 807
+rect -2884 525 -78 801
+rect 198 525 201 801
+rect -81 519 201 525
+rect -1715 152 1405 253
+rect -1715 11 -757 152
+rect 1333 11 1405 152
+rect -1715 -42 1405 11
+<< via1 >>
+rect -2919 3180 -2591 3508
+rect 4 3208 332 3536
+<< metal2 >>
+rect -2919 3508 -2591 4055
+rect 4 3536 332 3994
+rect -2922 3180 -2919 3508
+rect -2591 3180 -2588 3508
+rect 1 3208 4 3536
+rect 332 3208 335 3536
+use NMOSPair  NMOSPair_0
+timestamp 1669244576
+transform 1 0 1517 0 1 -11
+box -1517 11 1306 3381
+use NMOSPair *NMOSPair_1
+timestamp 1669244576
+transform 1 0 -1406 0 1 -48
+box -1517 11 1306 3381
+<< labels >>
+rlabel metal2 4 3536 332 3994 1 R_Pin
+port 1 n
+rlabel metal2 -2919 3727 -2591 4055 1 L_Pin
+port 0 n
+rlabel viali -284 25 912 137 5 Vs
+port 2 s
+<< end >>

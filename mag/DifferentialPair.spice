@@ -1,0 +1,13 @@
+* NGSPICE file created from DifferentialPair.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_UBJTTH D_Pin_L a_n258_n4031# li_688_4007# a_n392_n4191#
++ a_n200_n4057# a_200_n4031#
+X0 a_200_n4031# a_n200_n4057# a_n258_n4031# a_n392_n4191# sky130_fd_pr__nfet_g5v0d10v5 ad=1.16e+13p pd=8.058e+07u as=1.16e+13p ps=8.058e+07u w=4e+07u l=2e+06u
+.ends
+
+.subckt DifferentialPair D_Pin_L D_Pin_R D_In_L D_In_R NMOS_Vs Body
+Xsky130_fd_pr__nfet_g5v0d10v5_UBJTTH_0 D_Pin_L D_Pin_R D_In_L Body D_In_R NMOS_Vs
++ sky130_fd_pr__nfet_g5v0d10v5_UBJTTH
+X0 NMOS_Vs D_In_L D_Pin_L Body sky130_fd_pr__nfet_g5v0d10v5 ad=2.28172e+13p pd=1.58815e+08u as=1.16e+13p ps=8.058e+07u w=4e+07u l=2e+06u
+.ends
+

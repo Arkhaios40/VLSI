@@ -1,0 +1,34 @@
+* NGSPICE file created from GainStage.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_2ZQVB2 a_n492_n2191# li_n480_2135# a_n300_n2057#
++ a_300_n2031# a_n358_n2031#
+X0 a_300_n2031# a_n300_n2057# a_n358_n2031# a_n492_n2191# sky130_fd_pr__nfet_g5v0d10v5 ad=5.8e+12p pd=4.058e+07u as=5.8e+12p ps=4.058e+07u w=2e+07u l=3e+06u
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_49CJ6G a_n108_n2531# a_n242_n2691# a_50_n2531#
++ a_n50_n2557#
+X0 a_50_n2531# a_n50_n2557# a_n108_n2531# a_n242_n2691# sky130_fd_pr__nfet_g5v0d10v5 ad=7.25e+12p pd=5.058e+07u as=7.25e+12p ps=5.058e+07u w=2.5e+07u l=500000u
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_M768YF li_n398_3150# a_500_n3036# a_n500_n3062#
++ w_n758_n3262# a_n558_n3036#
+X0 a_500_n3036# a_n500_n3062# a_n558_n3036# w_n758_n3262# sky130_fd_pr__pfet_g5v0d10v5 ad=8.7e+12p pd=6.058e+07u as=8.7e+12p ps=6.058e+07u w=3e+07u l=5e+06u
+.ends
+
+.subckt sky130_fd_pr__cap_mim_m3_1_27X89E m3_n1186_n540# c1_n1146_n500#
+X0 c1_n1146_n500# m3_n1186_n540# sky130_fd_pr__cap_mim_m3_1 l=5e+06u w=1e+07u
+.ends
+
+.subckt GainStage VPlus Gain_L_Pin Gain_R_Pin GateRef Out Gain_Vs
+Xsky130_fd_pr__nfet_g5v0d10v5_2ZQVB2_1 Gain_Vs Gain_L_Pin Gain_L_Pin Gain_Vs Gain_L_Pin
++ sky130_fd_pr__nfet_g5v0d10v5_2ZQVB2
+Xsky130_fd_pr__nfet_g5v0d10v5_49CJ6G_0 Gain_Vs Gain_Vs Out Gain_R_Pin sky130_fd_pr__nfet_g5v0d10v5_49CJ6G
+Xsky130_fd_pr__nfet_g5v0d10v5_49CJ6G_1 Out Gain_Vs Gain_Vs Gain_R_Pin sky130_fd_pr__nfet_g5v0d10v5_49CJ6G
+Xsky130_fd_pr__pfet_g5v0d10v5_M768YF_0 GateRef VPlus GateRef VPlus Out sky130_fd_pr__pfet_g5v0d10v5_M768YF
+Xsky130_fd_pr__pfet_g5v0d10v5_M768YF_1 GateRef Out GateRef VPlus VPlus sky130_fd_pr__pfet_g5v0d10v5_M768YF
+Xsky130_fd_pr__pfet_g5v0d10v5_M768YF_2 GateRef VPlus GateRef VPlus Out sky130_fd_pr__pfet_g5v0d10v5_M768YF
+Xsky130_fd_pr__cap_mim_m3_1_27X89E_0 Gain_R_Pin Out sky130_fd_pr__cap_mim_m3_1
+Xsky130_fd_pr__nfet_g5v0d10v5_2ZQVB2_0 Gain_Vs Gain_Vs Gain_L_Pin Gain_R_Pin Gain_Vs
++ sky130_fd_pr__nfet_g5v0d10v5_2ZQVB2
+.ends
+
