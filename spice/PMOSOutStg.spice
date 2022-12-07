@@ -1,0 +1,82 @@
+** sch_path: /home/arkhaios/Project/xschem/FinalProject/PMOSOutStg.sch
+**.subckt PMOSOutStg In1 Y0_I+ In2 Y0_I- In3 Y0_Q+ In4 Y0_Q- In5 Y1_I+ In6 Y1_I- In7 Y1_Q+ In8 Y1_Q-
+*+ In9 Y2_I+ In10 In11 Y2_I- Y2_Q+ In12 Y2_Q- In13 Y3_I+ In14 Y3_I- In15 Y3_Q+ In16 Y3_Q-
+*.ipin In1
+*.opin Y0_I+
+*.ipin In2
+*.opin Y0_I-
+*.ipin In3
+*.opin Y0_Q+
+*.ipin In4
+*.opin Y0_Q-
+*.ipin In5
+*.opin Y1_I+
+*.ipin In6
+*.opin Y1_I-
+*.ipin In7
+*.opin Y1_Q+
+*.ipin In8
+*.opin Y1_Q-
+*.ipin In9
+*.opin Y2_I+
+*.ipin In10
+*.ipin In11
+*.opin Y2_I-
+*.opin Y2_Q+
+*.ipin In12
+*.opin Y2_Q-
+*.ipin In13
+*.opin Y3_I+
+*.ipin In14
+*.opin Y3_I-
+*.ipin In15
+*.opin Y3_Q+
+*.ipin In16
+*.opin Y3_Q-
+x1 In1 Y0_I+ Y2_I+ Stage2Pmos
+x2 In2 Y0_I- Y2_I- Stage2Pmos
+x3 In3 Y0_Q+ Y2_Q+ Stage2Pmos
+x4 In4 Y0_Q- Y2_Q- Stage2Pmos
+x5 In5 Y1_I+ Y3_I+ Stage2Pmos
+x6 In6 Y1_I- Y3_I- Stage2Pmos
+x7 In7 Y1_Q+ Y3_Q+ Stage2Pmos
+x8 In8 Y1_Q- Y3_Q- Stage2Pmos
+x9 In9 Y0_I+ Y2_I- Stage2Pmos
+x10 In10 Y0_I- Y2_I+ Stage2Pmos
+x11 In11 Y0_Q+ Y2_Q- Stage2Pmos
+x12 In12 Y0_Q- Y2_Q+ Stage2Pmos
+x13 In13 Y1_I+ Y3_I- Stage2Pmos
+x15 In14 Y1_I- Y3_I+ Stage2Pmos
+x16 In15 Y1_Q+ Y3_Q- Stage2Pmos
+x17 In16 Y1_Q- Y3_Q+ Stage2Pmos
+**.ends
+
+* expanding   symbol:  FinalProject/Stage2Pmos.sym # of pins=3
+** sym_path: /home/arkhaios/Project/xschem/FinalProject/Stage2Pmos.sym
+** sch_path: /home/arkhaios/Project/xschem/FinalProject/Stage2Pmos.sch
+.subckt Stage2Pmos In Cp1 Cp2
+*.iopin In
+*.iopin Cp1
+*.iopin Cp2
+XM157 net2 In VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM158 In In VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM159 net1 In VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM160 In In In VDD sky130_fd_pr__pfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM161 Cp1 In net2 VDD sky130_fd_pr__pfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM162 Cp2 In net1 VDD sky130_fd_pr__pfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.GLOBAL VDD
+.end

@@ -1,0 +1,132 @@
+** sch_path: /home/arkhaios/Project/xschem/untitled-2.sch
+**.subckt untitled-2 X(0)i+In X(0)i-In X(0)q+In X(0)q-In X(2)i+In X(2)i-In X(2)q+In X(2)q-In
+*+ X(1)i+In X(1)i-In X(1)q+In X(1)q-In X(3)i+In X(3)i-In X(3)q+In X(3)q-In
+*.iopin X(0)i+In
+*.iopin X(0)i-In
+*.iopin X(0)q+In
+*.iopin X(0)q-In
+*.iopin X(2)i+In
+*.iopin X(2)i-In
+*.iopin X(2)q+In
+*.iopin X(2)q-In
+*.iopin X(1)i+In
+*.iopin X(1)i-In
+*.iopin X(1)q+In
+*.iopin X(1)q-In
+*.iopin X(3)i+In
+*.iopin X(3)i-In
+*.iopin X(3)q+In
+*.iopin X(3)q-In
+V1 VDD GND 5
+.save i(v1)
+x1 X(0)i+In net7 net9 NmosStage1
+x2 X(0)i+Out net7 X(2)i+Out Stage2Pmos
+x3 X(0)i-In net8 net10 NmosStage1
+x4 X(0)q+In net1 net11 NmosStage1
+x5 X(0)q-In net2 net12 NmosStage1
+x6 X(0)i-Out net8 X(2)i-Out Stage2Pmos
+x7 X(0)q+Out net1 X(2)q+Out Stage2Pmos
+x8 X(0)q-Out net2 X(2)q-Out Stage2Pmos
+x9 X(2)i+In net7 net9 NmosStage1
+x10 X(1)i+Out net9 X(3)i+Out Stage2Pmos
+x11 X(2)i-In net8 net10 NmosStage1
+x12 X(2)q+In net1 net11 NmosStage1
+x13 X(2)q-In net2 net12 NmosStage1
+x14 X(1)i-Out net10 X(3)i-Out Stage2Pmos
+x15 X(1)q+Out net11 X(3)q+Out Stage2Pmos
+x16 X(1)q-Out net12 X(3)q-Out Stage2Pmos
+x17 X(1)i+In net3 net13 NmosStage1
+x18 X(0)i+Out net3 X(2)i+Out Stage2Pmos
+x19 X(1)i-In net4 net14 NmosStage1
+x20 X(1)q+In net5 net15 NmosStage1
+x21 X(1)q-In net6 net16 NmosStage1
+x22 X(0)i-Out net4 X(2)i-Out Stage2Pmos
+x23 X(0)q+Out net5 X(2)q+Out Stage2Pmos
+x24 X(0)q-Out net6 X(2)q-Out Stage2Pmos
+x25 X(3)i+In net17 net18 NmosStage1
+x26 X(1)i+Out net3 X(3)i+Out Stage2Pmos
+x27 X(3)i-In net4 net19 NmosStage1
+x28 X(3)q+In net5 net20 NmosStage1
+x29 X(3)q-In net3 net21 NmosStage1
+x30 X(1)i-Out net4 X(3)i-Out Stage2Pmos
+x31 X(1)q+Out net5 net22 Stage2Pmos
+x32 X(1)q-Out net3 X(3)q-Out Stage2Pmos
+**** begin user architecture code
+
+** opencircuitdesign pdks install
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+
+* this option enables mos model bin
+* selection based on W/NF instead of W
+.control
+op
+print all
+save all
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  FinalProject/NmosStage1.sym # of pins=3
+** sym_path: /home/arkhaios/Project/xschem/FinalProject/NmosStage1.sym
+** sch_path: /home/arkhaios/Project/xschem/FinalProject/NmosStage1.sch
+.subckt NmosStage1 Stg1In Stg1Out Stg1Out2
+*.iopin Stg1Out
+*.iopin Stg1Out2
+*.ipin Stg1In
+XM1 Stg1Out Stg1In net2 GND sky130_fd_pr__nfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 net2 Stg1In GND GND sky130_fd_pr__nfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM9 Stg1Out2 Stg1In net1 GND sky130_fd_pr__nfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 net1 Stg1In GND GND sky130_fd_pr__nfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 Stg1In Stg1In Stg1In GND sky130_fd_pr__nfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM5 Stg1In Stg1In GND GND sky130_fd_pr__nfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+V1 VDD GND 5
+.save i(v1)
+.ends
+
+
+* expanding   symbol:  FinalProject/Stage2Pmos.sym # of pins=3
+** sym_path: /home/arkhaios/Project/xschem/FinalProject/Stage2Pmos.sym
+** sch_path: /home/arkhaios/Project/xschem/FinalProject/Stage2Pmos.sch
+.subckt Stage2Pmos Stage2Out Stage2In Stage2Out2
+*.iopin Stage2In
+*.iopin Stage2Out
+*.iopin Stage2Out2
+XM1 net3 net1 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 net1 net1 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 net2 net1 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 Stage2In Stage2In net1 VDD sky130_fd_pr__pfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM5 Stage2Out Stage2In net3 VDD sky130_fd_pr__pfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM6 Stage2Out2 Stage2In net2 VDD sky130_fd_pr__pfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.GLOBAL VDD
+.GLOBAL GND
+.end

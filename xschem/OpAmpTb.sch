@@ -70,19 +70,19 @@ C {devices/lab_pin.sym} 190 -300 2 0 {name=p4 sig_type=std_logic lab=Vdiff}
 C {devices/lab_pin.sym} 190 -190 2 0 {name=p5 sig_type=std_logic lab=Vcm}
 C {devices/vsource.sym} 50 -140 2 0 {name=V4 value=5}
 C {devices/gnd.sym} 50 -170 2 0 {name=l8 lab=GND}
-C {devices/code.sym} -10.625 -350.625 0 0 {name=TT_MODELS
-only_toplevel=true
-format="tcleval( @value )"
-value="
-** opencircuitdesign pdks install
-.lib $::SKYWATER_MODELS/sky130.lib.spice tt
-
-"
-spice_ignore=false}
 C {devices/code.sym} -168.75 -354.375 0 0 {name=NGSPICE
 only_toplevel=true
 value="* this option enables mos model bin 
 * selection based on W/NF instead of W
+.include ~/Project/mag/OpAmp.spice
+*.include ~/Project/mag/CurrentRef.spice
+*.include ~/Project/mag/CurRefResistor.spice
+*.include ~/Project/mag/ConnectedNMOSPair.spice
+*.include ~/Project/mag/NMOSPair.spice
+*.include ~/Project/mag/GainStage.spice
+*.include ~/Project/mag/DifferentialPair.spice
+*.include ~/Project/mag/ConnectedPMOSPair.spice
+*.include ~/Project/mag/PMOSPair.spice
 .control
 op
 print all
@@ -109,3 +109,12 @@ m=1}
 C {devices/gnd.sym} 70 70 0 0 {name=l4 lab=GND}
 C {devices/lab_pin.sym} 50 10 1 0 {name=p3 sig_type=std_logic lab=Out}
 C {PrimalStructures/OpAmp1.sym} -200 10 0 0 {name=X1}
+C {devices/code.sym} -390.625 -280.625 0 0 {name=TT_MODELS
+only_toplevel=true
+format="tcleval( @value )"
+value="
+** opencircuitdesign pdks install
+.lib $::SKYWATER_MODELS/sky130.lib.spice tt
+
+"
+spice_ignore=false}

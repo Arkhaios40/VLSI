@@ -1,0 +1,192 @@
+** sch_path: /home/arkhaios/Project/xschem/FinalProject/AnalogFFT.sch
+**.subckt AnalogFFT IN_X0_I+ OUT_Y0_I+ IN_X0_I- OUT_Y0_I- IN_X0_Q+ OUT_Y0_Q+ IN_X0_Q- OUT_Y0_Q-
+*+ IN_X2_I+ OUT_Y1_I+ IN_X2_I- OUT_Y1_I- IN_X2_Q+ OUT_Y1_Q+ IN_X2_Q- OUT_Y1_Q- IN_X1_I+ OUT_Y2_I+ IN_X1_I-
+*+ OUT_Y2_I- IN_X1_Q+ OUT_Y2_Q+ IN_X1_Q- OUT_Y2_Q- IN_X3_I+ OUT_Y3_I+ IN_X3_I- OUT_Y3_I- IN_X3_Q+ OUT_Y3_Q+
+*+ IN_X3_Q- OUT_Y3_Q-
+*.ipin IN_X0_I+
+*.opin OUT_Y0_I+
+*.ipin IN_X0_I-
+*.opin OUT_Y0_I-
+*.ipin IN_X0_Q+
+*.opin OUT_Y0_Q+
+*.ipin IN_X0_Q-
+*.opin OUT_Y0_Q-
+*.ipin IN_X2_I+
+*.opin OUT_Y1_I+
+*.ipin IN_X2_I-
+*.opin OUT_Y1_I-
+*.ipin IN_X2_Q+
+*.opin OUT_Y1_Q+
+*.ipin IN_X2_Q-
+*.opin OUT_Y1_Q-
+*.ipin IN_X1_I+
+*.opin OUT_Y2_I+
+*.ipin IN_X1_I-
+*.opin OUT_Y2_I-
+*.ipin IN_X1_Q+
+*.opin OUT_Y2_Q+
+*.ipin IN_X1_Q-
+*.opin OUT_Y2_Q-
+*.ipin IN_X3_I+
+*.opin OUT_Y3_I+
+*.ipin IN_X3_I-
+*.opin OUT_Y3_I-
+*.ipin IN_X3_Q+
+*.opin OUT_Y3_Q+
+*.ipin IN_X3_Q-
+*.opin OUT_Y3_Q-
+x1 net1 OUT_Y0_I+ net2 OUT_Y0_I- net3 OUT_Y0_Q+ net4 OUT_Y0_Q- net5 OUT_Y1_I+ net6 OUT_Y1_I- net7
++ OUT_Y1_Q+ net8 OUT_Y1_Q- net9 OUT_Y2_I+ net10 OUT_Y2_I- net11 OUT_Y2_Q+ net12 OUT_Y2_Q- net13 OUT_Y3_I+ net14
++ OUT_Y3_I- net15 OUT_Y3_Q+ net16 OUT_Y3_Q- PMOSOutStg
+x2 IN_X0_I+ net1 IN_X0_I- net2 IN_X0_Q+ net3 IN_X0_Q- net4 IN_X2_I+ net5 IN_X2_I- net6 IN_X2_Q+ net7
++ IN_X2_Q- net8 NMOSR2Stg1
+x3 IN_X1_I+ net9 IN_X1_I- net10 IN_X1_Q+ net11 IN_X1_Q- net12 IN_X3_I+ net13 IN_X3_I- net14 IN_X3_Q+
++ net15 IN_X3_Q- net16 NMOSR2Stg1
+**.ends
+
+* expanding   symbol:  FinalProject/PMOSOutStg.sym # of pins=32
+** sym_path: /home/arkhaios/Project/xschem/FinalProject/PMOSOutStg.sym
+** sch_path: /home/arkhaios/Project/xschem/FinalProject/PMOSOutStg.sch
+.subckt PMOSOutStg In1 Y0_I+ In2 Y0_I- In3 Y0_Q+ In4 Y0_Q- In5 Y1_I+ In6 Y1_I- In7 Y1_Q+ In8 Y1_Q-
++ In9 Y2_I+ In10 Y2_I- In11 Y2_Q+ In12 Y2_Q- In13 Y3_I+ In14 Y3_I- In15 Y3_Q+ In16 Y3_Q-
+*.ipin In1
+*.opin Y0_I+
+*.ipin In2
+*.opin Y0_I-
+*.ipin In3
+*.opin Y0_Q+
+*.ipin In4
+*.opin Y0_Q-
+*.ipin In5
+*.opin Y1_I+
+*.ipin In6
+*.opin Y1_I-
+*.ipin In7
+*.opin Y1_Q+
+*.ipin In8
+*.opin Y1_Q-
+*.ipin In9
+*.opin Y2_I+
+*.ipin In10
+*.ipin In11
+*.opin Y2_I-
+*.opin Y2_Q+
+*.ipin In12
+*.opin Y2_Q-
+*.ipin In13
+*.opin Y3_I+
+*.ipin In14
+*.opin Y3_I-
+*.ipin In15
+*.opin Y3_Q+
+*.ipin In16
+*.opin Y3_Q-
+x1 In1 Y0_I+ Y2_I+ Stage2Pmos
+x2 In2 Y0_I- Y2_I- Stage2Pmos
+x3 In3 Y0_Q+ Y2_Q+ Stage2Pmos
+x4 In4 Y0_Q- Y2_Q- Stage2Pmos
+x5 In5 Y1_I+ Y3_I+ Stage2Pmos
+x6 In6 Y1_I- Y3_I- Stage2Pmos
+x7 In7 Y1_Q+ Y3_Q+ Stage2Pmos
+x8 In8 Y1_Q- Y3_Q- Stage2Pmos
+x9 In9 Y0_I+ Y2_I- Stage2Pmos
+x10 In10 Y0_I- Y2_I+ Stage2Pmos
+x11 In11 Y0_Q+ Y2_Q- Stage2Pmos
+x12 In12 Y0_Q- Y2_Q+ Stage2Pmos
+x13 In13 Y1_I+ Y3_I- Stage2Pmos
+x15 In14 Y1_I- Y3_I+ Stage2Pmos
+x16 In15 Y1_Q+ Y3_Q- Stage2Pmos
+x17 In16 Y1_Q- Y3_Q+ Stage2Pmos
+.ends
+
+
+* expanding   symbol:  FinalProject/NMOSR2Stg1.sym # of pins=16
+** sym_path: /home/arkhaios/Project/xschem/FinalProject/NMOSR2Stg1.sym
+** sch_path: /home/arkhaios/Project/xschem/FinalProject/NMOSR2Stg1.sch
+.subckt NMOSR2Stg1 IN_X0_i+ Out1 IN_X0_i- Out2 IN_X0_q+ Out3 IN_X0_q- Out4 IN_X2_i+ Out5 IN_X2_i-
++ Out6 IN_X2_q+ Out7 IN_X2_q- Out8
+*.iopin IN_X0_i+
+*.iopin Out1
+*.iopin IN_X0_i-
+*.iopin Out2
+*.iopin IN_X0_q+
+*.iopin Out3
+*.iopin IN_X0_q-
+*.iopin Out4
+*.iopin IN_X2_i+
+*.iopin Out5
+*.iopin IN_X2_i-
+*.iopin Out6
+*.iopin IN_X2_q+
+*.iopin Out7
+*.iopin IN_X2_q-
+*.iopin Out8
+x2 IN_X0_i+ Out1 Out5 NmosStage1
+x1 IN_X0_i- Out2 Out6 NmosStage1
+x3 IN_X0_q+ Out3 Out7 NmosStage1
+x4 IN_X0_q- Out4 Out8 NmosStage1
+x5 IN_X2_i+ Out1 Out5 NmosStage1
+x6 IN_X2_i- Out2 Out6 NmosStage1
+x7 IN_X2_q+ Out3 Out7 NmosStage1
+x8 IN_X2_q- Out4 Out8 NmosStage1
+.ends
+
+
+* expanding   symbol:  FinalProject/Stage2Pmos.sym # of pins=3
+** sym_path: /home/arkhaios/Project/xschem/FinalProject/Stage2Pmos.sym
+** sch_path: /home/arkhaios/Project/xschem/FinalProject/Stage2Pmos.sch
+.subckt Stage2Pmos In Cp1 Cp2
+*.iopin In
+*.iopin Cp1
+*.iopin Cp2
+XM157 net2 In VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM158 In In VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM159 net1 In VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM160 In In In VDD sky130_fd_pr__pfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM161 Cp1 In net2 VDD sky130_fd_pr__pfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM162 Cp2 In net1 VDD sky130_fd_pr__pfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  FinalProject/NmosStage1.sym # of pins=3
+** sym_path: /home/arkhaios/Project/xschem/FinalProject/NmosStage1.sym
+** sch_path: /home/arkhaios/Project/xschem/FinalProject/NmosStage1.sch
+.subckt NmosStage1 In Cp1 Cp2
+*.iopin In
+*.iopin Cp1
+*.iopin Cp2
+XM1 Cp1 In net2 GND sky130_fd_pr__nfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 net2 In GND GND sky130_fd_pr__nfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM9 Cp2 In net1 GND sky130_fd_pr__nfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 net1 In GND GND sky130_fd_pr__nfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 In In In GND sky130_fd_pr__nfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM5 In In GND GND sky130_fd_pr__nfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.GLOBAL VDD
+.GLOBAL GND
+.end

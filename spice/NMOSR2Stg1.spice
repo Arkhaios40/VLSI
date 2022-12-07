@@ -1,0 +1,79 @@
+** sch_path: /home/arkhaios/Project/xschem/FinalProject/NMOSR2Stg1.sch
+**.subckt NMOSR2Stg1 IN_X0_i+ Out1 IN_X0_i- Out2 IN_X0_q+ Out3 IN_X0_q- Out4 IN_X2_i+ Out5 IN_X2_i-
+*+ Out6 IN_X2_q+ Out7 IN_X2_q- Out8
+*.iopin IN_X0_i+
+*.iopin Out1
+*.iopin IN_X0_i-
+*.iopin Out2
+*.iopin IN_X0_q+
+*.iopin Out3
+*.iopin IN_X0_q-
+*.iopin Out4
+*.iopin IN_X2_i+
+*.iopin Out5
+*.iopin IN_X2_i-
+*.iopin Out6
+*.iopin IN_X2_q+
+*.iopin Out7
+*.iopin IN_X2_q-
+*.iopin Out8
+x2 IN_X0_i+ Out1 Out5 NmosStage1
+x1 IN_X0_i- Out2 Out6 NmosStage1
+x3 IN_X0_q+ Out3 Out7 NmosStage1
+x4 IN_X0_q- Out4 Out8 NmosStage1
+x5 IN_X2_i+ Out1 Out5 NmosStage1
+x6 IN_X2_i- Out2 Out6 NmosStage1
+x7 IN_X2_q+ Out3 Out7 NmosStage1
+x8 IN_X2_q- Out4 Out8 NmosStage1
+VDD VDD GND 2
+.save i(vdd)
+**** begin user architecture code
+
+** opencircuitdesign pdks install
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+
+* this option enables mos model bin
+* selection based on W/NF instead of W
+.control
+op
+*dc VDD 1 4 0.01
+print all
+save all
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  FinalProject/NmosStage1.sym # of pins=3
+** sym_path: /home/arkhaios/Project/xschem/FinalProject/NmosStage1.sym
+** sch_path: /home/arkhaios/Project/xschem/FinalProject/NmosStage1.sch
+.subckt NmosStage1 In Cp1 Cp2
+*.iopin In
+*.iopin Cp1
+*.iopin Cp2
+XM1 Cp1 In net2 GND sky130_fd_pr__nfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 net2 In GND GND sky130_fd_pr__nfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM9 Cp2 In net1 GND sky130_fd_pr__nfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 net1 In GND GND sky130_fd_pr__nfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 In In In GND sky130_fd_pr__nfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM5 In In GND GND sky130_fd_pr__nfet_g5v0d10v5 L=3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.GLOBAL VDD
+.GLOBAL GND
+.end
