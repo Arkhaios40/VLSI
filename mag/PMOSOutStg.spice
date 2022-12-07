@@ -1,0 +1,39 @@
+* NGSPICE file created from PMOSOutStg.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_WNKUWZ a_n358_n1236# a_300_n1236# a_n300_n1262#
++ w_n558_n1462#
+X0 a_300_n1236# a_n300_n1262# a_n358_n1236# w_n558_n1462# sky130_fd_pr__pfet_g5v0d10v5 ad=3.48e+12p pd=2.458e+07u as=3.48e+12p ps=2.458e+07u w=1.2e+07u l=3e+06u
+.ends
+
+.subckt Stage2Pmos In Cp2 Cp1 w_n2400_n180#
+Xsky130_fd_pr__pfet_g5v0d10v5_WNKUWZ_0 In In In w_n2400_n180# sky130_fd_pr__pfet_g5v0d10v5_WNKUWZ
+Xsky130_fd_pr__pfet_g5v0d10v5_WNKUWZ_1 Cp2 m1_1408_2794# In w_n2400_n180# sky130_fd_pr__pfet_g5v0d10v5_WNKUWZ
+Xsky130_fd_pr__pfet_g5v0d10v5_WNKUWZ_2 w_n2400_n180# In In w_n2400_n180# sky130_fd_pr__pfet_g5v0d10v5_WNKUWZ
+Xsky130_fd_pr__pfet_g5v0d10v5_WNKUWZ_3 Cp1 m1_4640_2760# In w_n2400_n180# sky130_fd_pr__pfet_g5v0d10v5_WNKUWZ
+Xsky130_fd_pr__pfet_g5v0d10v5_WNKUWZ_4 m1_1408_2794# w_n2400_n180# In w_n2400_n180#
++ sky130_fd_pr__pfet_g5v0d10v5_WNKUWZ
+Xsky130_fd_pr__pfet_g5v0d10v5_WNKUWZ_5 m1_4640_2760# w_n2400_n180# In w_n2400_n180#
++ sky130_fd_pr__pfet_g5v0d10v5_WNKUWZ
+.ends
+
+*.subckt PMOSOutStg In1 Y0_I+ In2 Y0_I- In3 Y0_Q+ In4 Y0_Q- In5 Y1_I+ In6 Y1_I- In7
+*+ Y1_Q+ In8 Y1_Q- In9 Y2_I+ In10 Y2_I- In11 Y2_Q+ In12 Y2_Q- In13 Y3_I+ In14 Y3_I-
+*+ In15 Y3_Q+ In16 Y3_Q-
+XStage2Pmos_8 In8 Y3_Q- Y1_Q- w_n2728_n8326# Stage2Pmos
+XStage2Pmos_9 In7 Y3_Q+ Y1_Q+ w_n2728_n8326# Stage2Pmos
+XStage2Pmos_10 In1 Y2_I+ Y0_I+ w_n2728_n8326# Stage2Pmos
+XStage2Pmos_11 In5 Y3_I+ Y1_I+ w_n2728_n8326# Stage2Pmos
+XStage2Pmos_12 In4 Y2_Q- Y0_Q- w_n2728_n8326# Stage2Pmos
+XStage2Pmos_13 In3 Y2_Q+ Y0_Q+ w_n2728_n8326# Stage2Pmos
+XStage2Pmos_14 In2 Y2_I- Y0_I- w_n2728_n8326# Stage2Pmos
+XStage2Pmos_15 In16 Y3_Q+ Y1_Q- w_n2728_n8326# Stage2Pmos
+XStage2Pmos_0 In6 Y3_I- Y1_I- w_n2728_n8326# Stage2Pmos
+XStage2Pmos_1 In15 Y3_Q- Y1_Q+ w_n2728_n8326# Stage2Pmos
+XStage2Pmos_2 In14 Y3_I+ Y1_I- w_n2728_n8326# Stage2Pmos
+XStage2Pmos_3 In13 Y3_I- Y1_I+ w_n2728_n8326# Stage2Pmos
+XStage2Pmos_4 In12 Y2_Q+ Y0_Q- w_n2728_n8326# Stage2Pmos
+XStage2Pmos_5 In11 Y2_Q- Y0_Q+ w_n2728_n8326# Stage2Pmos
+XStage2Pmos_7 In9 Y2_I- Y0_I+ w_n2728_n8326# Stage2Pmos
+XStage2Pmos_6 In10 Y2_I+ Y0_I- w_n2728_n8326# Stage2Pmos
+*.ends
+

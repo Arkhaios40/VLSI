@@ -1,0 +1,18 @@
+* NGSPICE file created from Stage2Pmos.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_WNKUWZ a_n358_n1236# a_300_n1236# a_n300_n1262#
++ w_n558_n1462#
+X0 a_300_n1236# a_n300_n1262# a_n358_n1236# w_n558_n1462# sky130_fd_pr__pfet_g5v0d10v5 ad=3.48e+12p pd=2.458e+07u as=3.48e+12p ps=2.458e+07u w=1.2e+07u l=3e+06u
+.ends
+
+*.subckt Stage2Pmos In Cp1 Cp2
+Xsky130_fd_pr__pfet_g5v0d10v5_WNKUWZ_0 In In In w_n2400_n180# sky130_fd_pr__pfet_g5v0d10v5_WNKUWZ
+Xsky130_fd_pr__pfet_g5v0d10v5_WNKUWZ_1 Cp1 m1_1408_2794# In w_n2400_n180# sky130_fd_pr__pfet_g5v0d10v5_WNKUWZ
+Xsky130_fd_pr__pfet_g5v0d10v5_WNKUWZ_2 w_n2400_n180# In In w_n2400_n180# sky130_fd_pr__pfet_g5v0d10v5_WNKUWZ
+Xsky130_fd_pr__pfet_g5v0d10v5_WNKUWZ_4 m1_1408_2794# w_n2400_n180# In w_n2400_n180#
++ sky130_fd_pr__pfet_g5v0d10v5_WNKUWZ
+Xsky130_fd_pr__pfet_g5v0d10v5_WNKUWZ_3 Cp2 m1_4640_2760# In w_n2400_n180# sky130_fd_pr__pfet_g5v0d10v5_WNKUWZ
+Xsky130_fd_pr__pfet_g5v0d10v5_WNKUWZ_5 m1_4640_2760# w_n2400_n180# In w_n2400_n180#
++ sky130_fd_pr__pfet_g5v0d10v5_WNKUWZ
+*.ends
+

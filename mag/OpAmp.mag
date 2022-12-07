@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1669589165
+timestamp 1669614457
 << locali >>
 rect -77 18137 455 18156
 rect -77 17692 -47 18137
@@ -249,7 +249,7 @@ timestamp 1669244576
 transform 1 0 -7172 0 1 -10384
 box -5846 -84 5646 8110
 use ConnectedPMOSPair  ConnectedPMOSPair_1
-timestamp 1669588854
+timestamp 1669614457
 transform 1 0 -22909 0 1 9557
 box -8826 -1262 8104 7824
 use CurrentRef  CurrentRef_0
@@ -265,13 +265,13 @@ timestamp 1669543272
 transform 1 0 7158 0 1 509
 box -4840 -5869 12280 8287
 use PMOSPair  PMOSPair_0
-timestamp 1669588854
+timestamp 1669589303
 transform 1 0 -5026 0 1 9364
-box -848 1494 6432 8042
+box -848 1666 6432 8042
 use PMOSPair  PMOSPair_1
-timestamp 1669588854
+timestamp 1669589303
 transform 1 0 3166 0 1 9446
-box -848 1494 6432 8042
+box -848 1666 6432 8042
 << labels >>
 rlabel metal1 -34107 17645 -4742 19943 1 VDD
 port 0 n

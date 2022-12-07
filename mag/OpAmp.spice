@@ -1,49 +1,38 @@
 * NGSPICE file created from OpAmp.ext - technology: sky130A
 
 .subckt sky130_fd_pr__pfet_g5v0d10v5_97BMAW a_n558_n3000# a_n500_n3097# a_500_n3000#
-+ w_n758_n3297# VSUBS
++ w_n758_n3297#
 X0 a_500_n3000# a_n500_n3097# a_n558_n3000# w_n758_n3297# sky130_fd_pr__pfet_g5v0d10v5 ad=8.7e+12p pd=6.058e+07u as=8.7e+12p ps=6.058e+07u w=3e+07u l=5e+06u
-C0 w_n758_n3297# VSUBS 32.32fF
 .ends
 
 .subckt sky130_fd_pr__pfet_g5v0d10v5_97TZA6 a_n200_n2097# a_200_n2000# w_n458_n2297#
-+ a_n258_n2000# VSUBS
++ a_n258_n2000#
 X0 a_200_n2000# a_n200_n2097# a_n258_n2000# w_n458_n2297# sky130_fd_pr__pfet_g5v0d10v5 ad=5.8e+12p pd=4.058e+07u as=5.8e+12p ps=4.058e+07u w=2e+07u l=2e+06u
-C0 w_n458_n2297# VSUBS 14.26fF
 .ends
 
-.subckt PMOSPair body CenterTap Vp m1_162_3398# Vs VSUBS
-XXM12 Vs Vp CenterTap body VSUBS sky130_fd_pr__pfet_g5v0d10v5_97BMAW
-XXM7 Vp CenterTap body m1_162_3398# VSUBS sky130_fd_pr__pfet_g5v0d10v5_97TZA6
-XXM8 Vp m1_162_3398# body CenterTap VSUBS sky130_fd_pr__pfet_g5v0d10v5_97TZA6
-XXM9 Vp CenterTap body m1_162_3398# VSUBS sky130_fd_pr__pfet_g5v0d10v5_97TZA6
-XXM10 Vp m1_162_3398# body CenterTap VSUBS sky130_fd_pr__pfet_g5v0d10v5_97TZA6
-XXM11 Vp CenterTap body m1_162_3398# VSUBS sky130_fd_pr__pfet_g5v0d10v5_97TZA6
-C0 body VSUBS 95.68fF
+.subckt PMOSPair body CenterTap Vp m1_162_3398# Vs
+XXM12 Vs Vp CenterTap body sky130_fd_pr__pfet_g5v0d10v5_97BMAW
+XXM7 Vp CenterTap body m1_162_3398# sky130_fd_pr__pfet_g5v0d10v5_97TZA6
+XXM8 Vp m1_162_3398# body CenterTap sky130_fd_pr__pfet_g5v0d10v5_97TZA6
+XXM9 Vp CenterTap body m1_162_3398# sky130_fd_pr__pfet_g5v0d10v5_97TZA6
+XXM10 Vp m1_162_3398# body CenterTap sky130_fd_pr__pfet_g5v0d10v5_97TZA6
+XXM11 Vp CenterTap body m1_162_3398# sky130_fd_pr__pfet_g5v0d10v5_97TZA6
 .ends
 
-.subckt ConnectedPMOSPair Vss VP_LeftPin R_Pin VSUBS
-XPMOSPair_0 Vss PMOSPair_0/CenterTap VP_LeftPin R_Pin Vss VSUBS PMOSPair
-XPMOSPair_1 Vss PMOSPair_1/CenterTap VP_LeftPin VP_LeftPin Vss VSUBS PMOSPair
-C0 VP_LeftPin VSUBS 15.44fF
-C1 Vss VSUBS 223.41fF
+.subckt ConnectedPMOSPair Vss VP_LeftPin R_Pin
+XPMOSPair_0 Vss PMOSPair_0/CenterTap VP_LeftPin R_Pin Vss PMOSPair
+XPMOSPair_1 Vss PMOSPair_1/CenterTap VP_LeftPin VP_LeftPin Vss PMOSPair
 .ends
 
 .subckt sky130_fd_pr__nfet_g5v0d10v5_UBJTTH D_Pin_L a_n258_n4031# li_688_4007# a_n392_n4191#
 + a_n200_n4057# a_200_n4031#
 X0 a_200_n4031# a_n200_n4057# a_n258_n4031# a_n392_n4191# sky130_fd_pr__nfet_g5v0d10v5 ad=1.16e+13p pd=8.058e+07u as=1.16e+13p ps=8.058e+07u w=4e+07u l=2e+06u
-C0 D_Pin_L a_n392_n4191# 10.80fF
-C1 a_200_n4031# a_n392_n4191# 10.58fF
-C2 a_n258_n4031# a_n392_n4191# 13.16fF
 .ends
 
 .subckt DifferentialPair D_Pin_R D_In_L D_In_R NMOS_Vs Body D_Pin_L
 Xsky130_fd_pr__nfet_g5v0d10v5_UBJTTH_0 D_Pin_L D_Pin_R D_In_L Body D_In_R NMOS_Vs
 + sky130_fd_pr__nfet_g5v0d10v5_UBJTTH
 X0 NMOS_Vs D_In_L D_Pin_L Body sky130_fd_pr__nfet_g5v0d10v5 ad=2.28172e+13p pd=1.58815e+08u as=1.16e+13p ps=8.058e+07u w=4e+07u l=2e+06u
-C0 NMOS_Vs 0 13.56fF
-C1 D_Pin_L 0 11.73fF
-C2 D_Pin_R 0 13.05fF
 .ends
 
 .subckt sky130_fd_pr__nfet_g5v0d10v5_2ZQVB2 a_n492_n2191# li_n480_2135# a_n300_n2057#
@@ -57,12 +46,11 @@ X0 a_50_n2531# a_n50_n2557# a_n108_n2531# a_n242_n2691# sky130_fd_pr__nfet_g5v0d
 .ends
 
 .subckt sky130_fd_pr__pfet_g5v0d10v5_M768YF li_n398_3150# a_500_n3036# a_n500_n3062#
-+ w_n758_n3262# a_n558_n3036# VSUBS
++ w_n758_n3262# a_n558_n3036#
 X0 a_500_n3036# a_n500_n3062# a_n558_n3036# w_n758_n3262# sky130_fd_pr__pfet_g5v0d10v5 ad=8.7e+12p pd=6.058e+07u as=8.7e+12p ps=6.058e+07u w=3e+07u l=5e+06u
-C0 w_n758_n3262# VSUBS 32.01fF
 .ends
 
-.subckt sky130_fd_pr__cap_mim_m3_1_27X89E m3_n1186_n540# c1_n1146_n500# VSUBS
+.subckt sky130_fd_pr__cap_mim_m3_1_27X89E m3_n1186_n540# c1_n1146_n500#
 X0 c1_n1146_n500# m3_n1186_n540# sky130_fd_pr__cap_mim_m3_1 l=5e+06u w=1e+07u
 .ends
 
@@ -71,16 +59,12 @@ Xsky130_fd_pr__nfet_g5v0d10v5_2ZQVB2_1 Gain_Vs Gain_L_Pin Gain_L_Pin Gain_Vs Gai
 + sky130_fd_pr__nfet_g5v0d10v5_2ZQVB2
 Xsky130_fd_pr__nfet_g5v0d10v5_49CJ6G_0 Gain_Vs Gain_Vs Out Gain_R_Pin sky130_fd_pr__nfet_g5v0d10v5_49CJ6G
 Xsky130_fd_pr__nfet_g5v0d10v5_49CJ6G_1 Out Gain_Vs Gain_Vs Gain_R_Pin sky130_fd_pr__nfet_g5v0d10v5_49CJ6G
-Xsky130_fd_pr__pfet_g5v0d10v5_M768YF_0 GateRef VPlus GateRef VPlus Out Gain_Vs sky130_fd_pr__pfet_g5v0d10v5_M768YF
-Xsky130_fd_pr__pfet_g5v0d10v5_M768YF_1 GateRef Out GateRef VPlus VPlus Gain_Vs sky130_fd_pr__pfet_g5v0d10v5_M768YF
-Xsky130_fd_pr__pfet_g5v0d10v5_M768YF_2 GateRef VPlus GateRef VPlus Out Gain_Vs sky130_fd_pr__pfet_g5v0d10v5_M768YF
-Xsky130_fd_pr__cap_mim_m3_1_27X89E_0 Gain_R_Pin Out Gain_Vs sky130_fd_pr__cap_mim_m3_1_27X89E
+Xsky130_fd_pr__pfet_g5v0d10v5_M768YF_0 GateRef VPlus GateRef VPlus Out sky130_fd_pr__pfet_g5v0d10v5_M768YF
+Xsky130_fd_pr__pfet_g5v0d10v5_M768YF_1 GateRef Out GateRef VPlus VPlus sky130_fd_pr__pfet_g5v0d10v5_M768YF
+Xsky130_fd_pr__pfet_g5v0d10v5_M768YF_2 GateRef VPlus GateRef VPlus Out sky130_fd_pr__pfet_g5v0d10v5_M768YF
+Xsky130_fd_pr__cap_mim_m3_1_27X89E_0 Gain_R_Pin Out sky130_fd_pr__cap_mim_m3_1
 Xsky130_fd_pr__nfet_g5v0d10v5_2ZQVB2_0 Gain_Vs Gain_Vs Gain_L_Pin Gain_R_Pin Gain_Vs
 + sky130_fd_pr__nfet_g5v0d10v5_2ZQVB2
-C0 Gain_R_Pin Gain_Vs 11.60fF
-C1 Out Gain_Vs 14.44fF
-C2 VPlus Gain_Vs 98.18fF
-C3 Gain_L_Pin Gain_Vs 11.62fF
 .ends
 
 .subckt sky130_fd_pr__nfet_g5v0d10v5_HYQESV a_200_n2031# a_n258_n2031# a_n392_n2191#
@@ -100,61 +84,35 @@ Xsky130_fd_pr__nfet_g5v0d10v5_VSVLYK_0 S VSUBS Vn Vd sky130_fd_pr__nfet_g5v0d10v
 Xsky130_fd_pr__nfet_g5v0d10v5_HYQESV_2 Vd m1_n2132_2872# VSUBS Vn sky130_fd_pr__nfet_g5v0d10v5_HYQESV
 Xsky130_fd_pr__nfet_g5v0d10v5_HYQESV_3 m1_n2132_2872# Vd VSUBS Vn sky130_fd_pr__nfet_g5v0d10v5_HYQESV
 Xsky130_fd_pr__nfet_g5v0d10v5_HYQESV_4 Vd m1_n2132_2872# VSUBS Vn sky130_fd_pr__nfet_g5v0d10v5_HYQESV
-C0 Vd VSUBS 13.96fF
-C1 m1_n2132_2872# VSUBS 16.37fF
 .ends
 
 .subckt ConnectedNMOSPair R_Pin L_Pin Vs
 XNMOSPair_0 R_Pin L_Pin Vs Vs NMOSPair
 XNMOSPair_1 L_Pin L_Pin Vs Vs NMOSPair
-C0 L_Pin Vs 31.45fF
-C1 NMOSPair_1/m1_n2132_2872# Vs 10.48fF
-C2 NMOSPair_0/m1_n2132_2872# Vs 10.44fF
 .ends
 
 .subckt sky130_fd_pr__res_xhigh_po_1p41_3ZBBQK a_n3862_n4398# a_3450_n4268# a_n3732_n4268#
 X0 a_n3732_n4268# a_3450_n4268# a_n3862_n4398# sky130_fd_pr__res_xhigh_po w=1.41e+06u l=7.8337e+08u
 .ends
 
-.subckt CurRefResistor Pin1 Pin2 VSUBS
-Xsky130_fd_pr__res_xhigh_po_1p41_3ZBBQK_0 VSUBS Pin2 Pin1 sky130_fd_pr__res_xhigh_po_1p41_3ZBBQK
+.subckt CurRefResistor Pin1 Pin2
+Xsky130_fd_pr__res_xhigh_po_1p41_3ZBBQK_0 VSUBS Pin2 Pin1 sky130_fd_pr__res_xhigh_po_1p41
 .ends
 
 .subckt CurrentRef Vplus Ref Vneg
-XCurRefResistor_0 Vplus CurRefResistor_0/Pin2 Vneg CurRefResistor
+XCurRefResistor_0 Vplus CurRefResistor_0/Pin2 CurRefResistor
 XConnectedNMOSPair_0 Ref CurRefResistor_0/Pin2 Vneg ConnectedNMOSPair
-C0 CurRefResistor_0/Pin2 Vneg 32.21fF
-C1 ConnectedNMOSPair_0/NMOSPair_1/m1_n2132_2872# Vneg 10.41fF
-C2 Ref Vneg 10.38fF
-C3 ConnectedNMOSPair_0/NMOSPair_0/m1_n2132_2872# Vneg 10.41fF
 .ends
 
-.subckt OpAmp1 VDD In+ In- Out Ground
-XConnectedPMOSPair_1 VDD PMOSPair_1/Vp ConnectedPMOSPair_1/R_Pin Ground ConnectedPMOSPair
-XPMOSPair_0 VDD PMOSPair_0/CenterTap PMOSPair_1/Vp GainStage_0/Gain_L_Pin VDD Ground
-+ PMOSPair
-XPMOSPair_1 VDD PMOSPair_1/CenterTap PMOSPair_1/Vp GainStage_0/Gain_R_Pin VDD Ground
-+ PMOSPair
+*.subckt OpAmp VDD In+ In- Out Ground
+XConnectedPMOSPair_1 VDD PMOSPair_1/Vp ConnectedPMOSPair_1/R_Pin ConnectedPMOSPair
+XPMOSPair_0 VDD PMOSPair_0/CenterTap PMOSPair_1/Vp GainStage_0/Gain_L_Pin VDD PMOSPair
+XPMOSPair_1 VDD PMOSPair_1/CenterTap PMOSPair_1/Vp GainStage_0/Gain_R_Pin VDD PMOSPair
 XDifferentialPair_0 PMOSPair_1/CenterTap In+ In- ConnectedNMOSPair_0/R_Pin Ground
 + PMOSPair_0/CenterTap DifferentialPair
 XGainStage_0 VDD GainStage_0/Gain_L_Pin GainStage_0/Gain_R_Pin PMOSPair_1/Vp Out Ground
 + GainStage
 XConnectedNMOSPair_0 ConnectedNMOSPair_0/R_Pin ConnectedPMOSPair_1/R_Pin Ground ConnectedNMOSPair
 XCurrentRef_0 VDD PMOSPair_1/Vp Ground CurrentRef
-C0 CurrentRef_0/CurRefResistor_0/Pin2 Ground 32.03fF
-C1 CurrentRef_0/ConnectedNMOSPair_0/NMOSPair_1/m1_n2132_2872# Ground 10.41fF
-C2 CurrentRef_0/ConnectedNMOSPair_0/NMOSPair_0/m1_n2132_2872# Ground 10.40fF
-C3 ConnectedPMOSPair_1/R_Pin Ground 40.91fF
-C4 ConnectedNMOSPair_0/NMOSPair_1/m1_n2132_2872# Ground 10.41fF
-C5 ConnectedNMOSPair_0/R_Pin Ground 26.07fF
-C6 ConnectedNMOSPair_0/NMOSPair_0/m1_n2132_2872# Ground 10.90fF
-C7 Out Ground 13.23fF
-C8 In- Ground 14.88fF
-C9 PMOSPair_1/CenterTap Ground 15.96fF
-C10 GainStage_0/Gain_R_Pin Ground 19.69fF
-C11 PMOSPair_0/CenterTap Ground 17.37fF
-C12 GainStage_0/Gain_L_Pin Ground 19.35fF
-C13 PMOSPair_1/Vp Ground 57.79fF
-C14 VDD Ground 592.92fF
-.ends
+*.ends
 

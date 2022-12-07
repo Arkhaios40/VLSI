@@ -1,0 +1,20 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1670358788
+<< checkpaint >>
+rect -1260 11654 84795 18063
+rect -1260 -660 160661 11654
+use PMOSOutStg  x1
+timestamp 1670358787
+transform 1 0 0 0 1 13400
+box 0 -12800 83535 3403
+use NMOSR2Stg1  x2
+timestamp 1670358788
+transform 1 0 83535 0 1 7000
+box 0 -6400 37933 3394
+use NMOSR2Stg1  x3
+timestamp 1670358788
+transform 1 0 121468 0 1 7000
+box 0 -6400 37933 3394
+<< end >>
