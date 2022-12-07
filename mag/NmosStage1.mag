@@ -1,0 +1,52 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1670358788
+<< checkpaint >>
+rect -1325 4646 2251 4711
+rect -1325 4581 3242 4646
+rect -1325 4516 4233 4581
+rect -1325 4451 5224 4516
+rect -1325 4386 6215 4451
+rect -1325 -725 7206 4386
+rect -1260 -855 7206 -725
+rect -1260 -2060 1460 -855
+rect 1648 -920 7206 -855
+rect 2639 -985 7206 -920
+rect 3630 -1050 7206 -985
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+use sky130_fd_pr__nfet_g5v0d10v5_WAFCRF  XM1
+timestamp 0
+transform 1 0 463 0 1 1993
+box 0 0 1 1
+use sky130_fd_pr__nfet_g5v0d10v5_WAFCRF  XM2
+timestamp 0
+transform 1 0 1454 0 1 1928
+box 0 0 1 1
+use sky130_fd_pr__nfet_g5v0d10v5_WAFCRF  XM3
+timestamp 0
+transform 1 0 3436 0 1 1798
+box 0 0 1 1
+use sky130_fd_pr__nfet_g5v0d10v5_WAFCRF  XM4
+timestamp 0
+transform 1 0 4427 0 1 1733
+box 0 0 1 1
+use sky130_fd_pr__nfet_g5v0d10v5_WAFCRF  XM5
+timestamp 0
+transform 1 0 5418 0 1 1668
+box 0 0 1 1
+use sky130_fd_pr__nfet_g5v0d10v5_WAFCRF  XM9
+timestamp 0
+transform 1 0 2445 0 1 1863
+box 0 0 1 1
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 In
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 Cp1
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 Cp2
+port 2 nsew
+<< end >>
