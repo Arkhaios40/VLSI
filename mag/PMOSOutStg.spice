@@ -16,9 +16,9 @@ Xsky130_fd_pr__pfet_g5v0d10v5_WNKUWZ_5 m1_4640_2760# w_n2400_n180# In w_n2400_n1
 + sky130_fd_pr__pfet_g5v0d10v5_WNKUWZ
 .ends
 
-*.subckt PMOSOutStg In1 Y0_I+ In2 Y0_I- In3 Y0_Q+ In4 Y0_Q- In5 Y1_I+ In6 Y1_I- In7
-*+ Y1_Q+ In8 Y1_Q- In9 Y2_I+ In10 Y2_I- In11 Y2_Q+ In12 Y2_Q- In13 Y3_I+ In14 Y3_I-
-*+ In15 Y3_Q+ In16 Y3_Q-
+.subckt PMOSOutStg In1 Y0_I+ In2 Y0_I- In3 Y0_Q+ In4 Y0_Q- In5 Y1_I+ In6 Y1_I- In7
++ Y1_Q+ In8 Y1_Q- In9 Y2_I+ In10 Y2_I- In11 Y2_Q+ In12 Y2_Q- In13 Y3_I+ In14 Y3_I-
++ In15 Y3_Q+ In16 Y3_Q-
 XStage2Pmos_8 In8 Y3_Q- Y1_Q- w_n2728_n8326# Stage2Pmos
 XStage2Pmos_9 In7 Y3_Q+ Y1_Q+ w_n2728_n8326# Stage2Pmos
 XStage2Pmos_10 In1 Y2_I+ Y0_I+ w_n2728_n8326# Stage2Pmos
@@ -35,5 +35,5 @@ XStage2Pmos_4 In12 Y2_Q+ Y0_Q- w_n2728_n8326# Stage2Pmos
 XStage2Pmos_5 In11 Y2_Q- Y0_Q+ w_n2728_n8326# Stage2Pmos
 XStage2Pmos_7 In9 Y2_I- Y0_I+ w_n2728_n8326# Stage2Pmos
 XStage2Pmos_6 In10 Y2_I+ Y0_I- w_n2728_n8326# Stage2Pmos
-*.ends
+.ends
 

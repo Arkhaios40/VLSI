@@ -1,0 +1,93 @@
+** sch_path: /home/arkhaios/Project/xschem/FinalProject/AnalogFFTTB.sch
+**.subckt AnalogFFTTB
+x1 net14 net48 net13 net17 net15 net18 net12 net19 net16 net20 net11 net21 net9 net22 net10 net23
++ net7 net24 net8 net25 net5 net26 net6 net27 net4 net28 net3 net29 net2 net30 net1 net31 AnalogFFT
+VDD VDD GND 5
+.save i(vdd)
+VBIT0I net14 net13 2
+.save i(vbit0i)
+VBIT0Q net15 net12 0
+.save i(vbit0q)
+VBIT2i net16 net11 2
+.save i(vbit2i)
+VBIT2Q net9 net10 2
+.save i(vbit2q)
+VBIT1i net7 net8 0
+.save i(vbit1i)
+VBIT1q net5 net6 2
+.save i(vbit1q)
+VBIT3i net4 net3 0
+.save i(vbit3i)
+VBITeq net2 net1 2
+.save i(vbiteq)
+V_YO_I+ net48 net32 0
+.save i(v_yo_i+)
+V_YO_I- net17 net33 0
+.save i(v_yo_i-)
+V_YO_Q+ net18 net34 0
+.save i(v_yo_q+)
+V_YO_Q- net19 net35 0
+.save i(v_yo_q-)
+V_Y1_I+ net20 net36 0
+.save i(v_y1_i+)
+V_Y1_I- net21 net37 0
+.save i(v_y1_i-)
+V_Y1_Q+ net22 net38 0
+.save i(v_y1_q+)
+V_Y1_Q net23 net39 0
+.save i(v_y1_q)
+V_Y2_I+ net24 net40 0
+.save i(v_y2_i+)
+V_Y2_I- net25 net41 0
+.save i(v_y2_i-)
+V_Y2_Q+ net26 net42 0
+.save i(v_y2_q+)
+V_Y2_Q- net27 net43 0
+.save i(v_y2_q-)
+V_Y3_I+ net28 net44 0
+.save i(v_y3_i+)
+V_Y3_I- net29 net45 0
+.save i(v_y3_i-)
+V_Y3_Q+ net30 net46 0
+.save i(v_y3_q+)
+V_Y3_Q- net31 net47 0
+.save i(v_y3_q-)
+R1 net32 GND 10k m=1
+R2 net33 GND 10k m=1
+R3 net34 GND 10k m=1
+R4 net35 GND 10k m=1
+R5 net36 GND 10k m=1
+R6 net37 GND 10k m=1
+R7 net38 GND 10k m=1
+R8 net39 GND 10k m=1
+R9 net40 GND 10k m=1
+R10 net41 GND 10k m=1
+R11 net42 GND 10k m=1
+R12 net43 GND 10k m=1
+R13 net44 GND 10k m=1
+R14 net45 GND 10k m=1
+R15 net46 GND 10k m=1
+R16 net47 GND 10k m=1
+**** begin user architecture code
+
+** opencircuitdesign pdks install
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+
+* this option enables mos model bin
+* selection based on W/NF instead of W
+.include ~/Project/mag/AnalogFFT.spice
+.control
+op
+*dc VDD 1 4 0.01
+print all
+save all
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL VDD
+.GLOBAL GND
+.end

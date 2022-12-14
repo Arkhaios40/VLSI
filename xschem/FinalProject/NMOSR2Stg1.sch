@@ -53,22 +53,12 @@ N 230 460 230 490 {
 lab=Out8}
 N 230 460 280 460 {
 lab=Out8}
-N 200 -20 200 250 {
-lab=Out5}
 N 150 -20 200 -20 {
-lab=Out5}
-N 210 50 210 320 {
 lab=Out6}
-N 150 50 210 50 {
-lab=Out6}
-N 220 120 220 390 {
-lab=Out7}
 N 150 120 220 120 {
-lab=Out7}
-N 230 190 230 460 {
 lab=Out8}
 N 150 190 230 190 {
-lab=Out8}
+lab=Out7}
 N -60 -50 -20 -50 {
 lab=IN_X0_i+}
 N -60 20 -20 20 {
@@ -101,6 +91,20 @@ N 280 390 280 400 {
 lab=Out7}
 N 280 460 280 470 {
 lab=Out8}
+N 200 -20 210 -20 {
+lab=Out6}
+N 210 -20 210 320 {
+lab=Out6}
+N 150 50 200 50 {
+lab=Out5}
+N 200 50 200 250 {
+lab=Out5}
+N 220 120 250 120 {
+lab=Out8}
+N 250 120 250 460 {
+lab=Out8}
+N 230 190 230 390 {
+lab=Out7}
 C {FinalProject/NmosStage1.sym} 0 -30 0 0 {name=x2}
 C {FinalProject/NmosStage1.sym} 0 40 0 0 {name=x1}
 C {FinalProject/NmosStage1.sym} 0 110 0 0 {name=x3}

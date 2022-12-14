@@ -116,7 +116,7 @@ lab=#net46}
 N 370 190 460 190 {
 lab=#net47}
 C {FinalProject/AnalogFFT.sym} 10 40 0 0 {name=x1}
-C {devices/code.sym} 320 -490 0 0 {name=TT_MODELS
+C {devices/code.sym} 310 -290 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -125,13 +125,14 @@ value="
 
 "
 spice_ignore=false}
-C {devices/vsource.sym} 110 -410 0 0 {name=VDD value=5}
-C {devices/vdd.sym} 110 -440 0 0 {name=l4 lab=VDD}
-C {devices/gnd.sym} 110 -380 0 0 {name=l5 lab=GND}
-C {devices/code.sym} -148.75 -494.375 0 0 {name=NGSPICE
+C {devices/vsource.sym} 100 -210 0 0 {name=VDD value=5}
+C {devices/vdd.sym} 100 -240 0 0 {name=l4 lab=VDD}
+C {devices/gnd.sym} 100 -180 0 0 {name=l5 lab=GND}
+C {devices/code.sym} -128.75 -274.375 0 0 {name=NGSPICE
 only_toplevel=true
 value="* this option enables mos model bin 
 * selection based on W/NF instead of W
+.include ~/Project/mag/AnalogFFT.spice
 .control
 op
 *dc VDD 1 4 0.01

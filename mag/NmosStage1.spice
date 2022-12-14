@@ -1,0 +1,16 @@
+* NGSPICE file created from NmosStage1.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z a_n358_n1169# a_n492_n1391# a_n300_n1257#
++ a_300_n1169#
+X0 a_300_n1169# a_n300_n1257# a_n358_n1169# a_n492_n1391# sky130_fd_pr__nfet_g5v0d10v5 ad=3.48e+12p pd=2.458e+07u as=3.48e+12p ps=2.458e+07u w=1.2e+07u l=3e+06u
+.ends
+
+.subckt NmosStage1 In Cp1 Cp2
+Xsky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0 GND GND In In sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z
+Xsky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1 m1_n1260_n3620# GND In GND sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z
+Xsky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2 In GND In In sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z
+Xsky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3 Cp2 GND In m1_n1260_n3620# sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z
+Xsky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_4 Cp1 GND In m1_n660_140# sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z
+Xsky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5 m1_n660_140# GND In GND sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z
+.ends
+

@@ -121,10 +121,10 @@ x17 In16 Y1_Q- Y3_Q+ Stage2Pmos
 *.iopin Out7
 *.iopin IN_X2_q-
 *.iopin Out8
-x2 IN_X0_i+ Out1 Out5 NmosStage1
-x1 IN_X0_i- Out2 Out6 NmosStage1
-x3 IN_X0_q+ Out3 Out7 NmosStage1
-x4 IN_X0_q- Out4 Out8 NmosStage1
+x2 IN_X0_i+ Out1 Out6 NmosStage1
+x1 IN_X0_i- Out2 Out5 NmosStage1
+x3 IN_X0_q+ Out3 Out8 NmosStage1
+x4 IN_X0_q- Out4 Out7 NmosStage1
 x5 IN_X2_i+ Out1 Out5 NmosStage1
 x6 IN_X2_i- Out2 Out6 NmosStage1
 x7 IN_X2_q+ Out3 Out7 NmosStage1

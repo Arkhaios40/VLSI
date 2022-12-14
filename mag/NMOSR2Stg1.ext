@@ -1,0 +1,434 @@
+timestamp 1670983913
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use NmosStage1 NmosStage1_7 1 0 4034 0 1 44076
+use NmosStage1 NmosStage1_6 1 0 3998 0 1 37302
+use NmosStage1 NmosStage1_5 1 0 3942 0 1 30488
+use NmosStage1 NmosStage1_4 1 0 3942 0 1 23676
+use NmosStage1 NmosStage1_3 1 0 3852 0 1 16846
+use NmosStage1 NmosStage1_2 1 0 3870 0 1 10198
+use NmosStage1 NmosStage1_1 1 0 3830 0 1 3352
+use NmosStage1 NmosStage1_0 1 0 4126 0 1 50852
+port "Bit1q-" 14 -2600 5000 -1200 5400 m1
+port "bit1q+" 12 -2600 11800 -1200 12200 m1
+port "Bit1i-" 10 -2600 18600 -1200 19000 m1
+port "Bit1i+" 8 -2600 25400 -1200 25800 m1
+port "Out8" 15 25200 800 26600 1200 m3
+port "Out4" 7 26200 32200 27600 32600 m3
+port "Bit0q-" 6 -2600 32200 -1200 32600 m1
+port "Out7" 13 26200 7600 27600 8000 m3
+port "Out3" 5 26200 39000 27600 39400 m3
+port "Bit0q+" 4 -2400 39000 -1000 39400 m1
+port "Out6" 11 26400 14200 27800 14600 m3
+port "Out2" 3 26600 45800 28000 46200 m3
+port "Bit0i-" 2 -2400 45800 -1000 46200 m1
+port "Out5" 9 26200 21000 27600 21400 m3
+port "Out1" 1 26600 52600 28000 53000 m3
+port "Bit0i+" 0 -2200 52600 -1200 53000 m1
+node "Bit1q-" 1 5063.94 -2600 5000 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3989628 12288 0 0 0 0 0 0 0 0 0 0
+node "bit1q+" 1 5047.57 -2600 11800 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3989628 12288 0 0 0 0 0 0 0 0 0 0
+node "Bit1i-" 1 5030.47 -2600 18600 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3989628 12288 0 0 0 0 0 0 0 0 0 0
+node "Bit1i+" 1 5036.05 -2600 25400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3989628 12288 0 0 0 0 0 0 0 0 0 0
+node "Out8" 1 76823.2 25200 800 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40536040 54988 8840000 16800 31524220 47448 74360944 95880 0 0 0 0
+node "Out4" 4 49320.7 26200 32200 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15026418 43674 32342112 89124 2622214 8582 0 0 0 0 0 0
+node "Bit0q-" 1 5035.97 -2600 32200 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3989628 12288 0 0 0 0 0 0 0 0 0 0
+node "Out7" 1 73423.3 26200 7600 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36087080 49676 8800000 16800 51473050 68432 47436304 60472 0 0 0 0
+node "Out3" 4 45631.3 26200 39000 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13184370 38682 30667176 84580 4836214 14582 0 0 0 0 0 0
+node "Bit0q+" 1 5050.44 -2400 39000 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3989628 12288 0 0 0 0 0 0 0 0 0 0
+node "Out6" 2 61522.8 26400 14200 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 29874360 42412 7185480 15076 32207140 48540 73757168 95504 0 0 0 0
+node "Out2" 3 41917.7 26600 45800 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11492874 34098 30749070 84706 5279014 15782 0 0 0 0 0 0
+node "Bit0i-" 1 5051.68 -2400 45800 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3989628 12288 0 0 0 0 0 0 0 0 0 0
+node "Out5" 2 60006 26200 21000 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24447880 35956 6805400 14700 92682280 114846 0 0 0 0 0 0
+node "Out1" 3 38659.9 26600 52600 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9746766 29366 30827029 84764 5402350 16170 0 0 0 0 0 0
+node "Bit0i+" 1 5055.9 -2200 52600 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3989628 12288 0 0 0 0 0 0 0 0 0 0
+node "a_16200_26000#" 72 1189.48 16200 26000 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 240000 2000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "Out3" "Out7" 5559.38
+cap "Out2" "Bit0i-" 24.1056
+cap "Out2" "Out1" 3127.75
+cap "Out4" "Out3" 2664.1
+cap "Out2" "Out6" 7414.17
+cap "Out2" "Out7" 5484.13
+cap "bit1q+" "Out3" 26.6436
+cap "a_16200_26000#" "Out6" 70.1396
+cap "Out2" "Out4" 2630.65
+cap "a_16200_26000#" "Out4" 15.9274
+cap "Out5" "Out3" 11293.3
+cap "Out8" "Out1" 5780.84
+cap "Out8" "Out6" 9020.4
+cap "Out8" "Out7" 25756.6
+cap "Out2" "Out5" 40643.9
+cap "a_16200_26000#" "Out5" 9.25476
+cap "Out4" "Out8" 7202.63
+cap "Bit1i+" "Out1" 31.3663
+cap "Bit0i+" "Out1" 21.4868
+cap "Out8" "Out5" 10284.9
+cap "Out1" "Out6" 5467.92
+cap "Out7" "Out1" 5466.06
+cap "Out2" "Out3" 2632.52
+cap "Out7" "Out6" 10559.4
+cap "a_16200_26000#" "Out3" 59.9863
+cap "Out4" "Out1" 2621.83
+cap "Out4" "Out6" 11330.4
+cap "Out4" "Out7" 12258.8
+cap "Out5" "Out1" 5891.88
+cap "Out8" "Out3" 5552.22
+cap "Out5" "Out6" 20732.3
+cap "Out2" "Bit1i-" 32.906
+cap "Out5" "Out7" 10233
+cap "Out4" "Bit0q-" 29.2428
+cap "Out4" "Out5" 5267.72
+cap "Bit0q+" "Out3" 26.7479
+cap "Out2" "Out8" 5476.97
+cap "a_16200_26000#" "Out8" 47.5718
+cap "Out3" "Out1" 2623.69
+cap "Out3" "Out6" 11353.1
+cap "NmosStage1_1/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n492_n1391#" "NmosStage1_1/Cp2" 1.7053e-13
+cap "NmosStage1_1/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_1/Cp2" 0.0551
+cap "NmosStage1_1/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n492_n1391#" "NmosStage1_1/Cp2" 3.46192
+cap "NmosStage1_1/Cp2" "NmosStage1_1/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" 0.524236
+cap "NmosStage1_1/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" "NmosStage1_1/Cp1" 0.0780262
+cap "NmosStage1_1/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n492_n1391#" "NmosStage1_1/Cp2" 2.33862
+cap "NmosStage1_1/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" "NmosStage1_1/Cp2" 0.187275
+cap "NmosStage1_1/Cp1" "NmosStage1_1/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n358_n1169#" 0.0873745
+cap "NmosStage1_1/In" "NmosStage1_1/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" 14.132
+cap "NmosStage1_1/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n358_n1169#" "NmosStage1_1/Cp1" 3.67835
+cap "NmosStage1_1/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" "NmosStage1_1/Cp1" 0.205668
+cap "NmosStage1_1/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n492_n1391#" "NmosStage1_1/Cp1" 29.1962
+cap "NmosStage1_1/Cp1" "NmosStage1_1/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_4/a_n300_n1257#" 4.17022
+cap "NmosStage1_1/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_1/In" 22.3291
+cap "NmosStage1_1/In" "NmosStage1_2/GND" 55.0928
+cap "NmosStage1_1/In" "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" 24.2969
+cap "NmosStage1_1/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_1/In" 3.3677
+cap "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n300_n1257#" "NmosStage1_1/Cp1" 21.4431
+cap "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n358_n1169#" "NmosStage1_1/In" 7.89412
+cap "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" "NmosStage1_1/In" 1.72161
+cap "NmosStage1_1/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_1/Cp1" 10.6451
+cap "NmosStage1_2/Cp2" "NmosStage1_1/Cp1" 9.95045
+cap "NmosStage1_2/Cp2" "NmosStage1_1/Cp1" 22.0455
+cap "NmosStage1_1/Cp1" "NmosStage1_2/Cp2" 1.08833
+cap "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n492_n1391#" "NmosStage1_1/In" 22.3291
+cap "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" "NmosStage1_2/GND" -0.00973006
+cap "NmosStage1_2/GND" "NmosStage1_1/In" 37.3383
+cap "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" "NmosStage1_1/In" 11.3565
+cap "NmosStage1_2/Cp2" "NmosStage1_1/Cp1" 6.78177
+cap "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" "NmosStage1_1/Cp1" 9.86118
+cap "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n358_n1169#" "NmosStage1_1/In" 4.61822
+cap "NmosStage1_1/In" "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n492_n1391#" 0.572711
+cap "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n358_n1169#" "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n492_n1391#" -2.62781
+cap "NmosStage1_1/In" "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" 0.767879
+cap "NmosStage1_2/Cp2" "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n492_n1391#" -0.968902
+cap "NmosStage1_2/Cp2" "NmosStage1_1/Cp1" 22.0455
+cap "NmosStage1_2/Cp2" "NmosStage1_1/Cp1" 1.08833
+cap "NmosStage1_2/Cp2" "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n492_n1391#" 0.0647291
+cap "NmosStage1_2/Cp2" "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n492_n1391#" 4.11582
+cap "NmosStage1_2/Cp2" "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" 0.704112
+cap "NmosStage1_2/Cp1" "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n358_n1169#" 4.44089e-16
+cap "NmosStage1_2/Cp2" "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n492_n1391#" 2.84217e-14
+cap "NmosStage1_2/Cp1" "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n358_n1169#" 0.098533
+cap "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" "NmosStage1_2/Cp2" 0.251533
+cap "NmosStage1_2/Cp1" "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" 0.0897507
+cap "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n492_n1391#" "NmosStage1_2/Cp2" 2.88744
+cap "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_2/In" 14.0398
+cap "NmosStage1_2/In" "NmosStage1_2/Cp1" -8.03114
+cap "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" 0.181028
+cap "NmosStage1_2/In" "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" -0.0481296
+cap "NmosStage1_2/Cp1" "NmosStage1_2/In" -8.03114
+cap "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" 0.00624233
+cap "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n358_n1169#" 0.554545
+cap "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n358_n1169#" 1.09527
+cap "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_2/In" -0.0055768
+cap "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n300_n1257#" 0.186441
+cap "NmosStage1_2/Cp1" "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" -0.367401
+cap "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n492_n1391#" "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n358_n1169#" 0.046804
+cap "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n358_n1169#" "NmosStage1_2/Cp1" 3.79867
+cap "NmosStage1_3/Cp2" "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n492_n1391#" 0.00508158
+cap "NmosStage1_2/Cp1" "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_4/a_n300_n1257#" 3.88547
+cap "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" "NmosStage1_2/Cp1" 0.209602
+cap "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n492_n1391#" "NmosStage1_2/Cp1" 29.2264
+cap "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_2/In" 57.7127
+cap "NmosStage1_3/GND" "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" 0.0633485
+cap "NmosStage1_2/In" "NmosStage1_2/Cp1" -5.29066
+cap "NmosStage1_2/In" "NmosStage1_3/GND" 120.775
+cap "NmosStage1_2/In" "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" 50.9062
+cap "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_2/In" 14.7091
+cap "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" 0.00271778
+cap "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n300_n1257#" 0.0815335
+cap "NmosStage1_3/Cp2" "NmosStage1_2/Cp1" 22.6107
+cap "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_2/Cp1" 11.7659
+cap "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" "NmosStage1_2/In" 1.82221
+cap "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_3/Cp2" -1.25536
+cap "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n358_n1169#" -3.77812
+cap "NmosStage1_2/In" "NmosStage1_2/Cp1" -5.29066
+cap "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n358_n1169#" "NmosStage1_2/In" 19.4502
+cap "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n300_n1257#" "NmosStage1_2/Cp1" 38.3275
+cap "NmosStage1_3/Cp2" "NmosStage1_2/Cp1" 70.5702
+cap "NmosStage1_3/Cp2" "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" 0.146271
+cap "NmosStage1_3/Cp2" "NmosStage1_2/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n492_n1391#" 0.0178069
+cap "NmosStage1_2/Cp1" "NmosStage1_3/Cp2" 5.52041
+cap "NmosStage1_3/Cp2" "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" 0.0115015
+cap "NmosStage1_3/Cp2" "NmosStage1_2/Cp1" -10.6963
+cap "NmosStage1_3/Cp2" "NmosStage1_2/Cp1" -2.56442
+cap "NmosStage1_3/Cp2" "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" 0.0524252
+cap "NmosStage1_3/Cp2" "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" 0.688174
+cap "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n492_n1391#" "NmosStage1_3/Cp2" 6.8945
+cap "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_3/In" 1.45202
+cap "NmosStage1_3/Cp1" "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n358_n1169#" 2.84217e-14
+cap "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" "NmosStage1_3/Cp1" 0.0450789
+cap "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n492_n1391#" "NmosStage1_3/Cp1" 4.14262
+cap "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n358_n1169#" "NmosStage1_3/Cp1" 2.78798
+cap "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" "NmosStage1_3/Cp2" 0.245839
+cap "NmosStage1_3/Cp2" "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n492_n1391#" 0.00494303
+cap "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_3/In" 14.5069
+cap "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_3/In" 2.47792
+cap "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_3/In" 0.0460185
+cap "NmosStage1_3/In" "NmosStage1_3/Cp1" -32.3419
+cap "NmosStage1_3/Cp1" "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_4/a_n300_n1257#" 5.03623
+cap "NmosStage1_3/Cp1" "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" 0.163173
+cap "NmosStage1_3/Cp1" "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n358_n1169#" 0.523474
+cap "NmosStage1_3/Cp1" "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n492_n1391#" 24.7794
+cap "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n492_n1391#" "NmosStage1_3/In" 42.7345
+cap "NmosStage1_3/In" "NmosStage1_4/GND" 100.053
+cap "NmosStage1_3/In" "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" 33.1433
+cap "NmosStage1_4/GND" "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" -0.0105819
+cap "NmosStage1_3/In" "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n492_n1391#" 1.57092
+cap "NmosStage1_3/Cp1" "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n300_n1257#" 35.6686
+cap "NmosStage1_3/Cp1" "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n492_n1391#" 8.96501
+cap "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n358_n1169#" "NmosStage1_3/In" 10.5535
+cap "NmosStage1_3/Cp1" "NmosStage1_4/Cp2" 13.7182
+cap "NmosStage1_4/Cp2" "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n492_n1391#" -0.781907
+cap "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n358_n1169#" "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n492_n1391#" -2.75287
+cap "NmosStage1_3/Cp1" "NmosStage1_3/In" -0.564103
+cap "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" "NmosStage1_3/In" 7.85914
+cap "NmosStage1_3/Cp1" "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n492_n1391#" 2.19256
+cap "NmosStage1_4/Cp2" "NmosStage1_3/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n492_n1391#" -0.230321
+cap "NmosStage1_4/Cp2" "NmosStage1_3/Cp1" 41.7463
+cap "NmosStage1_4/Cp2" "NmosStage1_3/Cp1" 2.94972
+cap "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n492_n1391#" "NmosStage1_4/Cp2" 0.0342369
+cap "NmosStage1_4/Cp2" "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n492_n1391#" 0.0171184
+cap "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" "NmosStage1_4/Cp2" 0.625813
+cap "NmosStage1_4/Cp2" "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n492_n1391#" 5.3589
+cap "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_4/In" 1.37964
+cap "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_4/Cp1" -7.10543e-15
+cap "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n492_n1391#" "NmosStage1_4/Cp1" 3.68253
+cap "NmosStage1_4/Cp1" "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n358_n1169#" 2.52302
+cap "NmosStage1_4/Cp1" "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" 0.0315788
+cap "NmosStage1_4/In" "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" 37.9626
+cap "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" "NmosStage1_4/In" 23.5304
+cap "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_4/In" 63.8657
+cap "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n300_n1257#" "NmosStage1_4/Cp1" 25.5084
+cap "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n358_n1169#" "NmosStage1_4/In" 8.07877
+cap "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" "NmosStage1_4/In" 5.36114
+cap "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_4/Cp1" 8.35272
+cap "NmosStage1_5/Cp2" "NmosStage1_4/Cp1" 8.79931
+cap "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_4/In" 8.2036
+cap "NmosStage1_4/In" "NmosStage1_4/Cp1" -30.8436
+cap "NmosStage1_5/Cp2" "NmosStage1_4/Cp1" 20.6679
+cap "NmosStage1_4/Cp1" "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" 3.61851
+cap "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n358_n1169#" "NmosStage1_4/Cp1" 0.554407
+cap "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" "NmosStage1_4/Cp1" 0.130132
+cap "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n492_n1391#" "NmosStage1_4/Cp1" 25.1552
+cap "NmosStage1_4/Cp1" "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_4/a_n300_n1257#" 5.43464
+cap "NmosStage1_5/Cp2" "NmosStage1_4/Cp1" 1.45781
+cap "NmosStage1_4/In" "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n492_n1391#" 22.1514
+cap "NmosStage1_4/In" "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" 11.6379
+cap "NmosStage1_4/In" "NmosStage1_5/GND" 45.59
+cap "NmosStage1_5/GND" "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" -0.011464
+cap "NmosStage1_4/Cp1" "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n300_n1257#" 9.98455
+cap "NmosStage1_4/In" "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" 2.61258
+cap "NmosStage1_5/Cp2" "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n492_n1391#" -0.846344
+cap "NmosStage1_4/Cp1" "NmosStage1_5/Cp2" 5.4901
+cap "NmosStage1_4/Cp1" "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n492_n1391#" 1.27798
+cap "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n358_n1169#" "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n492_n1391#" -2.89662
+cap "NmosStage1_4/In" "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n492_n1391#" 2.92328
+cap "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n358_n1169#" "NmosStage1_4/In" 5.77977
+cap "NmosStage1_5/Cp2" "NmosStage1_4/Cp1" 20.6679
+cap "NmosStage1_4/Cp1" "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n492_n1391#" 0.532491
+cap "NmosStage1_5/Cp2" "NmosStage1_4/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n492_n1391#" -0.249322
+cap "NmosStage1_4/Cp1" "NmosStage1_5/Cp2" 1.45781
+cap "NmosStage1_5/Cp2" "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n492_n1391#" 0.0457383
+cap "NmosStage1_5/Cp2" "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n492_n1391#" 2.86943
+cap "NmosStage1_5/Cp2" "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" 0.373685
+cap "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n492_n1391#" "NmosStage1_5/Cp2" 1.85546
+cap "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" "NmosStage1_5/Cp2" 0.133493
+cap "NmosStage1_5/In" "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" 1.90981
+cap "NmosStage1_5/Cp1" "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" 0.0267115
+cap "NmosStage1_5/Cp1" "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n358_n1169#" 2.41761
+cap "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n492_n1391#" "NmosStage1_5/Cp1" 3.50036
+cap "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_5/In" 32.1472
+cap "NmosStage1_5/In" "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" 19.8297
+cap "NmosStage1_5/In" "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" 57.9697
+cap "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n300_n1257#" "NmosStage1_5/Cp1" 28.0348
+cap "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_5/Cp1" 5.8842
+cap "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n358_n1169#" "NmosStage1_5/In" 7.87346
+cap "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" "NmosStage1_5/In" 7.97296
+cap "NmosStage1_6/Cp2" "NmosStage1_5/Cp1" 7.55922
+cap "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_5/In" 2.46783
+cap "NmosStage1_5/In" "NmosStage1_5/Cp1" -29.2428
+cap "NmosStage1_5/Cp1" "NmosStage1_6/Cp2" 21.3377
+cap "NmosStage1_5/Cp1" "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" 9.17582
+cap "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_4/a_n300_n1257#" "NmosStage1_5/Cp1" 5.58863
+cap "NmosStage1_5/Cp1" "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" 0.115552
+cap "NmosStage1_6/Cp2" "NmosStage1_5/Cp1" 2.34901
+cap "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n358_n1169#" "NmosStage1_5/Cp1" 0.563846
+cap "NmosStage1_5/Cp1" "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n492_n1391#" 25.4014
+cap "NmosStage1_5/In" "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n492_n1391#" 20.0044
+cap "NmosStage1_6/GND" "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" -0.0105819
+cap "NmosStage1_6/GND" "NmosStage1_5/In" 44.4272
+cap "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" "NmosStage1_5/In" 9.52574
+cap "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" "NmosStage1_5/In" 3.64348
+cap "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n492_n1391#" "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n358_n1169#" -2.88049
+cap "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n492_n1391#" "NmosStage1_6/Cp2" -0.343445
+cap "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n358_n1169#" "NmosStage1_5/In" 4.48345
+cap "NmosStage1_5/Cp1" "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n300_n1257#" 11.392
+cap "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n492_n1391#" "NmosStage1_5/In" 0.177953
+cap "NmosStage1_5/Cp1" "NmosStage1_6/Cp2" 4.21815
+cap "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n492_n1391#" "NmosStage1_5/Cp1" 1.86085
+cap "NmosStage1_5/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n492_n1391#" "NmosStage1_6/Cp2" -0.786387
+cap "NmosStage1_5/Cp1" "NmosStage1_6/Cp2" 21.3377
+cap "NmosStage1_6/Cp2" "NmosStage1_5/Cp1" 2.34901
+cap "NmosStage1_6/Cp2" "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n492_n1391#" 0.0623218
+cap "NmosStage1_6/Cp2" "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" 0.65681
+cap "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n492_n1391#" "NmosStage1_6/Cp2" 3.94829
+cap "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n492_n1391#" "NmosStage1_6/Cp2" 2.74545
+cap "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" "NmosStage1_6/Cp2" 0.234635
+cap "NmosStage1_6/In" "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" 1.55715
+cap "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n358_n1169#" "NmosStage1_6/Cp1" 2.74031
+cap "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" "NmosStage1_6/Cp1" 0.042524
+cap "NmosStage1_6/Cp1" "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n492_n1391#" 2.09216
+cap "NmosStage1_6/Cp1" "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_4/a_n300_n1257#" 1.21976
+cap "NmosStage1_6/In" "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" 32.6155
+cap "NmosStage1_6/In" "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" 19.3353
+cap "NmosStage1_6/In" "NmosStage1_7/GND" 61.5321
+cap "NmosStage1_7/Cp2" "NmosStage1_6/Cp1" 6.79529
+cap "NmosStage1_6/In" "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" 10.3584
+cap "NmosStage1_6/Cp1" "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" 3.89618
+cap "NmosStage1_6/In" "NmosStage1_6/Cp1" -26.7479
+cap "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n300_n1257#" "NmosStage1_6/Cp1" 23.9579
+cap "NmosStage1_6/In" "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" 4.87713
+cap "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n358_n1169#" "NmosStage1_6/In" 8.76276
+cap "NmosStage1_7/Cp2" "NmosStage1_6/Cp1" 24.5857
+cap "NmosStage1_6/Cp1" "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" 5.49058
+cap "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_4/a_n300_n1257#" "NmosStage1_6/Cp1" 3.88924
+cap "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n358_n1169#" "NmosStage1_6/Cp1" 0.529753
+cap "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n492_n1391#" "NmosStage1_6/Cp1" 26.7916
+cap "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" "NmosStage1_6/Cp1" 0.157699
+cap "NmosStage1_7/Cp2" "NmosStage1_6/Cp1" 2.84026
+cap "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n492_n1391#" "NmosStage1_6/In" 20.0139
+cap "NmosStage1_6/In" "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" 9.6358
+cap "NmosStage1_7/GND" "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" -0.0116892
+cap "NmosStage1_6/In" "NmosStage1_7/GND" 48.5824
+cap "NmosStage1_7/Cp2" "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n492_n1391#" -0.237669
+cap "NmosStage1_6/Cp1" "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" 11.7179
+cap "NmosStage1_6/Cp1" "NmosStage1_7/Cp2" 3.41973
+cap "NmosStage1_6/In" "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n492_n1391#" 1.25279
+cap "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n358_n1169#" "NmosStage1_6/In" 5.24886
+cap "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n358_n1169#" "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n492_n1391#" -3.21052
+cap "NmosStage1_6/In" "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" 4.89053
+cap "NmosStage1_7/Cp2" "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n492_n1391#" -0.932586
+cap "NmosStage1_7/Cp2" "NmosStage1_6/Cp1" 24.5857
+cap "NmosStage1_6/Cp1" "NmosStage1_6/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n492_n1391#" 1.92033
+cap "NmosStage1_6/Cp1" "NmosStage1_7/Cp2" 2.84026
+cap "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n492_n1391#" "NmosStage1_7/Cp2" 0.0668689
+cap "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" "NmosStage1_7/Cp2" 0.747443
+cap "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n492_n1391#" "NmosStage1_7/Cp2" 4.26693
+cap "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n300_n1257#" "NmosStage1_7/In" 0.0360722
+cap "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" "NmosStage1_7/Cp1" 0.0702986
+cap "NmosStage1_7/Cp2" "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" 0.267013
+cap "NmosStage1_7/Cp2" "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n492_n1391#" 3.01628
+cap "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n358_n1169#" "NmosStage1_7/Cp1" 0.0799527
+cap "NmosStage1_7/In" "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n300_n1257#" 2.05761
+cap "NmosStage1_7/In" "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" 14.1719
+cap "NmosStage1_7/In" "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n300_n1257#" 0.0296431
+cap "NmosStage1_7/In" "NmosStage1_7/Cp1" -1.34323
+cap "NmosStage1_7/In" "NmosStage1_7/Cp1" -1.34323
+cap "NmosStage1_7/Cp1" "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" 0.200045
+cap "NmosStage1_7/Cp1" "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n492_n1391#" 29.1605
+cap "NmosStage1_7/Cp1" "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n358_n1169#" 3.59115
+cap "NmosStage1_7/Cp1" "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_4/a_n300_n1257#" 4.3636
+cap "NmosStage1_7/In" "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" 17.6305
+cap "NmosStage1_0/GND" "NmosStage1_7/In" 63.0983
+cap "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" "NmosStage1_7/In" 14.8233
+cap "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n358_n1169#" "NmosStage1_7/In" 7.41072
+cap "NmosStage1_0/GND" "NmosStage1_7/Cp1" 4.98469
+cap "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" "NmosStage1_7/In" 15.0297
+cap "NmosStage1_7/In" "NmosStage1_7/Cp1" -10.7096
+cap "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n300_n1257#" "NmosStage1_7/Cp1" 35.4784
+cap "NmosStage1_0/GND" "NmosStage1_7/In" 2.82991
+cap "NmosStage1_7/In" "NmosStage1_7/Cp1" -10.7096
+cap "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_7/Cp1" 6.11902
+cap "NmosStage1_0/Cp2" "NmosStage1_7/Cp1" 26.1423
+cap "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n300_n1257#" "NmosStage1_7/Cp1" 0.690961
+cap "NmosStage1_0/Cp2" "NmosStage1_7/Cp1" 3.1885
+cap "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n492_n1391#" "NmosStage1_7/In" 17.6305
+cap "NmosStage1_0/GND" "NmosStage1_7/In" 50.751
+cap "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" "NmosStage1_7/In" 7.37315
+cap "NmosStage1_0/GND" "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" -0.0116328
+cap "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n358_n1169#" "NmosStage1_7/In" 3.90248
+cap "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" "NmosStage1_7/Cp1" 12.6741
+cap "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n358_n1169#" "NmosStage1_0/GND" -3.19365
+cap "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" "NmosStage1_7/In" 7.08401
+cap "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n492_n1391#" "NmosStage1_0/Cp2" -1.16444
+cap "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n300_n1257#" "NmosStage1_7/Cp1" 0.337334
+cap "NmosStage1_0/Cp2" "NmosStage1_7/Cp1" 22.7715
+cap "NmosStage1_7/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n492_n1391#" "NmosStage1_7/Cp1" 1.91179
+cap "NmosStage1_7/Cp1" "NmosStage1_0/Cp2" 3.1885
+cap "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_1/a_n492_n1391#" "NmosStage1_0/Cp2" 0.0564374
+cap "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n492_n1391#" "NmosStage1_0/Cp2" 3.55011
+cap "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" "NmosStage1_0/Cp2" 0.54772
+cap "NmosStage1_0/In" "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_300_n1169#" 0.0022493
+cap "NmosStage1_0/In" "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n300_n1257#" 0.0247494
+cap "NmosStage1_0/Cp1" "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n358_n1169#" 4.44089e-16
+cap "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n492_n1391#" "NmosStage1_0/Cp2" 2.41176
+cap "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" "NmosStage1_0/Cp2" 0.195665
+cap "NmosStage1_0/Cp1" "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" 0.0724661
+cap "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n358_n1169#" "NmosStage1_0/Cp1" 0.0820404
+cap "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_0/In" 16.7418
+cap "NmosStage1_0/In" "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n300_n1257#" 0.0227569
+cap "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_2/a_n300_n1257#" "NmosStage1_0/In" 2.1073
+cap "NmosStage1_0/In" "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_300_n1169#" 0.180836
+cap "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_0/In" 4.90996
+cap "NmosStage1_0/Cp1" "NmosStage1_0/In" -4.55054
+cap "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_0/a_n492_n1391#" "NmosStage1_0/In" 1.32569
+cap "NmosStage1_0/In" "NmosStage1_0/Cp1" -4.55054
+cap "NmosStage1_0/Cp1" "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n300_n1257#" 0.201873
+cap "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_4/a_n300_n1257#" "NmosStage1_0/Cp1" 4.30886
+cap "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_3/a_n492_n1391#" "NmosStage1_0/Cp1" 29.1719
+cap "NmosStage1_0/Cp1" "NmosStage1_0/sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z_5/a_n358_n1169#" 3.61631
+cap "NmosStage1_0/Cp1" "NmosStage1_0/In" -6.19285
+cap "NmosStage1_0/In" "NmosStage1_0/Cp1" -6.19285
+merge "NmosStage1_7/In" "Bit0i-" -3443.75 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2358496 -7924 0 0 0 0 0 0 0 0 0 0
+merge "NmosStage1_6/In" "Bit0q+" -3563.07 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2371932 -8642 0 0 0 0 0 0 0 0 0 0
+merge "NmosStage1_0/Cp2" "NmosStage1_3/Cp2" -4524.94 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3339920 -10664 0 0 0 0 0 0 0 0 0 0
+merge "NmosStage1_3/Cp2" "Out5"
+merge "NmosStage1_0/VSUBS" "NmosStage1_7/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "NmosStage1_7/VSUBS" "NmosStage1_6/VSUBS"
+merge "NmosStage1_6/VSUBS" "NmosStage1_5/VSUBS"
+merge "NmosStage1_5/VSUBS" "NmosStage1_4/VSUBS"
+merge "NmosStage1_4/VSUBS" "NmosStage1_3/VSUBS"
+merge "NmosStage1_3/VSUBS" "NmosStage1_2/VSUBS"
+merge "NmosStage1_2/VSUBS" "NmosStage1_1/VSUBS"
+merge "NmosStage1_1/VSUBS" "VSUBS"
+merge "NmosStage1_6/Cp1" "NmosStage1_2/Cp1" -4405.65 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2559384 -9888 0 0 0 0 0 0 0 0 0 0
+merge "NmosStage1_2/Cp1" "Out3"
+merge "NmosStage1_6/Cp2" "NmosStage1_1/Cp2" -4109.85 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2964760 -10212 0 0 0 0 0 0 0 0 0 0
+merge "NmosStage1_1/Cp2" "Out7"
+merge "NmosStage1_1/In" "Bit1q-" -3505.73 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2358648 -8606 0 0 0 0 0 0 0 0 0 0
+merge "NmosStage1_0/Cp1" "NmosStage1_4/Cp1" -4365.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2616960 -10818 0 0 0 0 0 0 0 0 0 0
+merge "NmosStage1_4/Cp1" "Out1"
+merge "NmosStage1_4/In" "Bit1i+" -3664.24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2433168 -8946 0 0 0 0 0 0 0 0 0 0
+merge "NmosStage1_7/Cp1" "NmosStage1_3/Cp1" -4320.41 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2572668 -9924 0 0 0 0 0 0 0 0 0 0
+merge "NmosStage1_3/Cp1" "Out2"
+merge "NmosStage1_2/In" "bit1q+" -3634.37 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2397024 -8710 0 0 0 0 0 0 0 0 0 0
+merge "NmosStage1_5/Cp2" "NmosStage1_2/Cp2" -4300.26 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3031160 -10292 0 0 0 0 0 0 0 0 0 0
+merge "NmosStage1_2/Cp2" "Out8"
+merge "NmosStage1_5/Cp1" "NmosStage1_1/Cp1" -4078.92 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2330900 -9348 0 0 0 0 0 0 0 0 0 0
+merge "NmosStage1_1/Cp1" "Out4"
+merge "NmosStage1_7/Cp2" "NmosStage1_4/Cp2" -4344.92 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3180560 -10472 0 0 0 0 0 0 0 0 0 0
+merge "NmosStage1_4/Cp2" "Out6"
+merge "NmosStage1_3/In" "Bit1i-" -3422.71 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2418278 -8019 0 0 0 0 0 0 0 0 0 0
+merge "NmosStage1_5/In" "Bit0q-" -3703.62 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2521008 -9046 0 0 0 0 0 0 0 0 0 0
+merge "NmosStage1_0/In" "Bit0i+" -3185.68 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2186752 -8294 0 0 0 0 0 0 0 0 0 0

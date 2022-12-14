@@ -1,0 +1,141 @@
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_CQJY2Z in circuit NmosStage1 (0)(6 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_WNKUWZ in circuit Stage2Pmos (0)(6 instances)
+
+Subcircuit summary:
+Circuit 1: NmosStage1                      |Circuit 2: NmosStage1                      
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_g5v0d10v5 (6)           |sky130_fd_pr__nfet_g5v0d10v5 (6)           
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Circuits match correctly.
+
+Subcircuit pins:
+Circuit 1: NmosStage1                      |Circuit 2: NmosStage1                      
+-------------------------------------------|-------------------------------------------
+Cp1                                        |Cp1                                        
+Cp2                                        |Cp2                                        
+In                                         |In                                         
+GND                                        |GND                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes NmosStage1 and NmosStage1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: Stage2Pmos                      |Circuit 2: Stage2Pmos                      
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_g5v0d10v5 (6)           |sky130_fd_pr__pfet_g5v0d10v5 (6)           
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Circuits match correctly.
+
+Subcircuit pins:
+Circuit 1: Stage2Pmos                      |Circuit 2: Stage2Pmos                      
+-------------------------------------------|-------------------------------------------
+Cp1                                        |Cp1                                        
+Cp2                                        |Cp2                                        
+In                                         |In                                         
+w_n2400_n180#                              |VDD **Mismatch**                           
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes Stage2Pmos and Stage2Pmos are equivalent.
+
+Subcircuit summary:
+Circuit 1: NMOSR2Stg1                      |Circuit 2: NMOSR2Stg1                      
+-------------------------------------------|-------------------------------------------
+NmosStage1 (8)                             |NmosStage1 (8)                             
+Number of devices: 8                       |Number of devices: 8                       
+Number of nets: 17                         |Number of nets: 17                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Circuits match correctly.
+
+Subcircuit pins:
+Circuit 1: NMOSR2Stg1                      |Circuit 2: NMOSR2Stg1                      
+-------------------------------------------|-------------------------------------------
+VSUBS                                      |GND **Mismatch**                           
+Out2                                       |Out2                                       
+Out3                                       |Out3                                       
+Out4                                       |Out4                                       
+Out1                                       |Out1                                       
+Out6                                       |Out6                                       
+Out8                                       |Out8                                       
+Out7                                       |Out7                                       
+Out5                                       |Out5                                       
+Bit1i+                                     |IN_X0_i+ **Mismatch**                      
+Bit1i-                                     |IN_X0_i- **Mismatch**                      
+bit1q+                                     |IN_X0_q+ **Mismatch**                      
+Bit1q-                                     |IN_X0_q- **Mismatch**                      
+Bit0i+                                     |IN_X2_i+ **Mismatch**                      
+Bit0i-                                     |IN_X2_i- **Mismatch**                      
+Bit0q+                                     |IN_X2_q+ **Mismatch**                      
+Bit0q-                                     |IN_X2_q- **Mismatch**                      
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes NMOSR2Stg1 and NMOSR2Stg1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: PMOSOutStg                      |Circuit 2: PMOSOutStg                      
+-------------------------------------------|-------------------------------------------
+Stage2Pmos (16)                            |Stage2Pmos (16)                            
+Number of devices: 16                      |Number of devices: 16                      
+Number of nets: 33                         |Number of nets: 33                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Circuits match correctly.
+
+Subcircuit pins:
+Circuit 1: PMOSOutStg                      |Circuit 2: PMOSOutStg                      
+-------------------------------------------|-------------------------------------------
+Y1_I-                                      |Y1_I-                                      
+Y0_I-                                      |Y0_I-                                      
+Y0_Q+                                      |Y0_Q+                                      
+Y0_Q-                                      |Y0_Q-                                      
+Y1_I+                                      |Y1_I+                                      
+Y0_I+                                      |Y0_I+                                      
+Y1_Q+                                      |Y1_Q+                                      
+Y1_Q-                                      |Y1_Q-                                      
+Y3_I-                                      |Y3_I-                                      
+Y2_I-                                      |Y2_I-                                      
+Y2_Q+                                      |Y2_Q+                                      
+Y2_Q-                                      |Y2_Q-                                      
+Y3_I+                                      |Y3_I+                                      
+Y2_I+                                      |Y2_I+                                      
+Y3_Q+                                      |Y3_Q+                                      
+Y3_Q-                                      |Y3_Q-                                      
+In10                                       |In10                                       
+In9                                        |In9                                        
+In11                                       |In11                                       
+In12                                       |In12                                       
+In13                                       |In13                                       
+In14                                       |In14                                       
+In15                                       |In15                                       
+In6                                        |In6                                        
+In16                                       |In16                                       
+In2                                        |In2                                        
+In3                                        |In3                                        
+In4                                        |In4                                        
+In5                                        |In5                                        
+In1                                        |In1                                        
+In7                                        |In7                                        
+In8                                        |In8                                        
+(no matching pin)                          |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists for PMOSOutStg and PMOSOutStg altered to match.
+
+Subcircuit summary:
+Circuit 1: mag/AnalogFFT.spice             |Circuit 2: spice/AnalogFFT.spice           
+-------------------------------------------|-------------------------------------------
+NMOSR2Stg1 (2)                             |NMOSR2Stg1 (2)                             
+PMOSOutStg (1)                             |PMOSOutStg (1)                             
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 50                         |Number of nets: 50                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes mag/AnalogFFT.spice and spice/AnalogFFT.spice are equivalent.
+Circuits match uniquely.
